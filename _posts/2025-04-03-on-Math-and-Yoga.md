@@ -38,7 +38,7 @@ You have two ropes. Each one takes exactly 60 minutes to burn completely, but th
 
 #### Puzzle 2: The Fake Coin
 
-You have 8 coins. One of them is fake and slightly heavier or lighter than the others, but you do not know which. You have a balance scale and can use it twice.
+You have 8 coins. One of them is fake and slightly lighter than the others, but you do not know which. You have a balance scale and can use it twice.
 Can you figure out which coin is fake and whether it is heavier or lighter?
 
 #### Puzzle 3: Counting Trouble
