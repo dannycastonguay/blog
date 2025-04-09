@@ -1,0 +1,11 @@
+[
+  {
+    "platform": "X",
+    "page_name": "visit-a-tea-shop-to-gift-feedback",
+    "id": "",
+    "text": "Want to boost your team's strength? \ud83d\udcaa Master the art of feedback with a simple 3-step template and the \"A Tea Shops\" framework. How do you approach giving feedback? #FeedbackMatters #LeadershipSkills",
+    "created_at": "2025-04-09 12:28:32",
+    "status": "error",
+    "error": "Twitter API Error: 403 Forbidden\nYour client app is not configured with the appropriate oauth1 app permissions for this endpoint."
+  }
+]
