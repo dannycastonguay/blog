@@ -1,0 +1,162 @@
+name: Extract Social Media Content
+
+on:
+  # Only run on push to main/master branch
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - "_posts/**/*.md"
+      - "social_media/**"
+
+jobs:
+  extract-content:
+    # Skip if it's a revert commit or from a branch ending with _social_media
+    # Also skip if the commit message contains "Merge pull request" and the branch name ends with _social_media
+    if: |
+      !startsWith(github.event.head_commit.message, 'Revert ') && 
+      !endsWith(github.event.ref, '_social_media') &&
+      !(contains(github.event.head_commit.message, 'Merge pull request') && contains(github.event.head_commit.message, '_social_media'))
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2 # Fetch the last 2 commits to detect changes
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Detect new and updated posts
+        id: detect
+        run: |
+          # Get the before and after commit SHAs
+          BEFORE_SHA="${{ github.event.before }}"
+          AFTER_SHA="${{ github.event.after }}"
+          echo "Comparing commits $BEFORE_SHA and $AFTER_SHA"
+
+          # Get all changed files between the commits
+          CHANGED_FILES=$(git diff --name-status $BEFORE_SHA $AFTER_SHA | grep "^[AM]" | awk '{print $2}' | grep "^_posts/.*\.md$" || echo "")
+
+          # Output the changed posts
+          if [ -n "$CHANGED_FILES" ]; then
+            echo "Found changed posts:"
+            echo "$CHANGED_FILES"
+          else
+            echo "No changed posts detected"
+          fi
+
+          # Set the output variable
+          echo "changed_posts<<EOF" >> $GITHUB_OUTPUT
+          echo "$CHANGED_FILES" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Generate branch name
+        id: branch
+        run: |
+          # Process the first changed page to generate branch name
+          if [ -n "${{ steps.detect.outputs.changed_posts }}" ]; then
+            IFS=',' read -ra POSTS <<< "${{ steps.detect.outputs.changed_posts }}"
+            # Get the first page
+            PAGE="${POSTS[0]}"
+            
+            # Extract page name from path
+            # Remove _posts/ prefix and .md suffix
+            PAGE_NAME=$(basename "$PAGE" .md)
+            # If page name has date prefix (YYYY-MM-DD-), remove it
+            PAGE_NAME=$(echo "$PAGE_NAME" | sed -E 's/^[0-9]{4}-[0-9]{2}-[0-9]{2}-//')
+            
+            # Create branch name in the format {page_name}_{date}_social_media
+            TODAY=$(date +'%Y-%m-%d')
+            BRANCH_NAME="${PAGE_NAME}_${TODAY}_social_media"
+            
+            echo "Using page: $PAGE -> Branch: $BRANCH_NAME"
+            echo "branch_name=$BRANCH_NAME" >> $GITHUB_OUTPUT
+          else
+            BRANCH_NAME="$(date +'%Y-%m-%d')_social_media"
+            echo "No posts detected, using fallback branch name: $BRANCH_NAME"
+            echo "branch_name=$BRANCH_NAME" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create new branch
+        if: steps.detect.outputs.changed_posts != ''
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          # Set up authentication for all git operations
+          git config --global url."https://${{ secrets.GH_PAT }}@github.com/".insteadOf "https://github.com/"
+          git checkout -b ${{ steps.branch.outputs.branch_name }}
+
+      - name: Extract social media content
+        if: steps.detect.outputs.changed_posts != ''
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          # Check if OPENAI_API_KEY is set
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "Error: OPENAI_API_KEY is not set"
+            exit 1
+          fi
+
+          # Process each changed page
+          IFS=',' read -ra POSTS <<< "${{ steps.detect.outputs.changed_posts }}"
+          for page in "${POSTS[@]}"; do
+            echo "Processing page: $page"
+            python scripts/extract_social_media_content.py "$page" "X"
+            python scripts/extract_social_media_content.py "$page"
+          done
+
+      - name: Check for changes
+        id: check_changes
+        if: steps.detect.outputs.changed_posts != ''
+        run: |
+          git add social_media/
+          # Check if there are any changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "Changes detected"
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit changes
+        if: steps.detect.outputs.changed_posts != '' && steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git commit -m "Add social media content for new and updated posts"
+
+      - name: Push branch
+        if: steps.detect.outputs.changed_posts != '' && steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          # Use a different approach for authentication
+          git config --global url."https://${{ secrets.GH_PAT }}@github.com/".insteadOf "https://github.com/"
+          git push origin ${{ steps.branch.outputs.branch_name }}
+
+      - name: Create Pull Request
+        if: steps.detect.outputs.changed_posts != '' && steps.check_changes.outputs.has_changes == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          # Create pull request using GitHub CLI instead of the action
+          # This avoids the issue with the action trying to push the branch again
+          gh pr create \
+            --title "Add social media content for new and updated posts" \
+            --body "This PR adds social media content for the following new or updated posts:
+
+            ${{ steps.detect.outputs.changed_posts }}
+
+            The content will be published to social media platforms when this PR is merged." \
+            --base ${{ github.ref_name }} \
+            --head ${{ steps.branch.outputs.branch_name }}

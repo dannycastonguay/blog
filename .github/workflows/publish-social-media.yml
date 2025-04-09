@@ -1,0 +1,221 @@
+name: Publish Social Media Content
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - "social_media/**/*.txt"
+
+jobs:
+  # Job to publish social media content
+  publish-content:
+    # Only run on push to main/master branch with changes to social_media files
+    if: |
+      github.event_name == 'push' && !startsWith(github.event.head_commit.message, 'Revert ')
+
+    runs-on: ubuntu-latest
+
+    # Add permissions for GitHub token
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v35
+        with:
+          files: social_media/**/*.txt
+
+      - name: Check for newly added social_media folders
+        id: check-new-folders
+        run: |
+          # Get all added files from the commit
+          # Use || true to prevent failure if grep finds no matches
+          DIFF_OUTPUT=$(git diff --name-status ${{ github.event.before }} ${{ github.event.after }})
+          echo "Diff output:"
+          echo "$DIFF_OUTPUT"
+
+          # Find added files (A) in social_media directory, handling case where grep finds no matches
+          ADDED_FILES=$(echo "$DIFF_OUTPUT" | grep "^A" | awk '{print $2}' | grep "^social_media/" || true)
+
+          # Check if we found any added files
+          if [[ -n "$ADDED_FILES" ]]; then
+            echo "Added files in social_media directory:"
+            echo "$ADDED_FILES"
+            
+            # Extract the page folders (social_media/{page})
+            PAGE_FOLDERS=$(echo "$ADDED_FILES" | grep -o "social_media/[^/]*" | sort -u || true)
+            
+            if [[ -n "$PAGE_FOLDERS" ]]; then
+              echo "New social_media page folders detected:"
+              echo "$PAGE_FOLDERS"
+              echo "has_new_folders=true" >> $GITHUB_OUTPUT
+              echo "page_folders<<EOF" >> $GITHUB_OUTPUT
+              echo "$PAGE_FOLDERS" >> $GITHUB_OUTPUT
+              echo "EOF" >> $GITHUB_OUTPUT
+            else
+              echo "No new social_media page folders detected"
+              echo "has_new_folders=false" >> $GITHUB_OUTPUT
+            fi
+          else
+            echo "No added files in social_media directory"
+            echo "has_new_folders=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Check for social media content
+        id: check-content
+        run: |
+          if [[ "${{ steps.check-new-folders.outputs.has_new_folders }}" == "true" ]]; then
+            echo "has_content=true" >> $GITHUB_OUTPUT
+            echo "New social media page folders detected:"
+            echo "${{ steps.check-new-folders.outputs.page_folders }}"
+          else
+            echo "has_content=false" >> $GITHUB_OUTPUT
+            echo "No new social media page folders detected"
+          fi
+
+      - name: Publish to social media
+        if: steps.check-content.outputs.has_content == 'true'
+        env:
+          TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
+          TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
+          TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          TWITTER_ACCESS_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
+        run: |
+          # Use the page folders directly from the check-new-folders step
+          # Handle case where there are no folders (should not happen due to if condition above)
+          if [[ -n "${{ steps.check-new-folders.outputs.page_folders }}" ]]; then
+            echo "${{ steps.check-new-folders.outputs.page_folders }}" | while read folder; do
+              if [[ -n "$folder" ]]; then
+                echo "Processing folder: $folder"
+                python scripts/post_social_media.py "$folder" "posting_results.json"
+              fi
+            done
+          else
+            echo "No folders to process"
+          fi
+
+      - name: Upload posting results
+        if: steps.check-content.outputs.has_content == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: posting-results
+          path: |
+            posting_results.json
+            *.json
+          retention-days: 30
+
+      - name: Extract branch name from commit message
+        id: extract_branch
+        if: steps.check-content.outputs.has_content == 'true'
+        run: |
+          # Extract the branch name from the commit message if it's a merge commit
+          COMMIT_MSG="${{ github.event.head_commit.message }}"
+          if [[ "$COMMIT_MSG" == *"Merge pull request"* && "$COMMIT_MSG" == *"_social_media"* ]]; then
+            # Extract the branch name from the commit message
+            # Format: "Merge pull request #X from user/branch_name"
+            BRANCH_NAME=$(echo "$COMMIT_MSG" | grep -o "from [^/]*/[^ ]*" | sed 's/from [^/]*\///')
+            echo "Found branch name in commit message: $BRANCH_NAME"
+            echo "branch_name=$BRANCH_NAME" >> $GITHUB_OUTPUT
+            
+            # Extract PR number
+            PR_NUMBER=$(echo "$COMMIT_MSG" | grep -o "#[0-9]*" | sed 's/#//')
+            echo "Found PR number: $PR_NUMBER"
+            echo "pr_number=$PR_NUMBER" >> $GITHUB_OUTPUT
+            
+            echo "is_merge_commit=true" >> $GITHUB_OUTPUT
+          else
+            echo "Not a merge commit or not from a _social_media branch"
+            echo "is_merge_commit=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Extract successful platforms and posting results
+        id: extract_platforms
+        if: steps.check-content.outputs.has_content == 'true'
+        run: |
+          # Parse the posting results to get successful platforms
+          PLATFORMS=$(jq -r '.[] | select(.status == "success") | .platform' posting_results.json | sort -u | tr '\n' ',' | sed 's/,$//')
+          echo "Successful platforms: $PLATFORMS"
+          echo "platforms=$PLATFORMS" >> $GITHUB_OUTPUT
+
+          # Create a formatted list for the PR comment
+          if [ -n "$PLATFORMS" ]; then
+            FORMATTED_LIST=""
+            IFS=',' read -ra PLATFORM_ARRAY <<< "$PLATFORMS"
+            for platform in "${PLATFORM_ARRAY[@]}"; do
+              FORMATTED_LIST="$FORMATTED_LIST- $platform\n"
+            done
+            echo "formatted_list<<EOF" >> $GITHUB_OUTPUT
+            echo -e "$FORMATTED_LIST" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+          else
+            echo "formatted_list=- None (check logs for errors)" >> $GITHUB_OUTPUT
+          fi
+
+          # Get the posting results content
+          POSTING_RESULTS=$(cat posting_results.json)
+          echo "posting_results<<EOF" >> $GITHUB_OUTPUT
+          echo "$POSTING_RESULTS" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Commit posting results to branch
+        if: steps.extract_branch.outputs.is_merge_commit == 'true' && steps.check-content.outputs.has_content == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+          # Get the branch name from the extracted branch
+          BRANCH_NAME="${{ steps.extract_branch.outputs.branch_name }}"
+
+          # Checkout the branch
+          git fetch origin $BRANCH_NAME || echo "Branch may not exist anymore"
+          git checkout $BRANCH_NAME || echo "Cannot checkout branch, it may have been deleted"
+
+          # Only proceed if branch checkout was successful
+          if [ $? -eq 0 ]; then
+            # Add all social media content
+            git add social_media/
+            git add posting_results.json
+
+            # Commit and push to the branch
+            git commit -m "Update posting results" || echo "No changes to commit"
+            git push origin $BRANCH_NAME || echo "Cannot push to branch, it may be protected"
+          else
+            echo "Skipping commit as branch could not be checked out"
+          fi
+
+      - name: Add comment to PR
+        if: steps.extract_branch.outputs.is_merge_commit == 'true' && steps.check-content.outputs.has_content == 'true'
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          issue-number: ${{ steps.extract_branch.outputs.pr_number }}
+          token: ${{ secrets.GH_PAT }}
+          body: |
+            ## Social Media Content Published ✅
+
+            The social media content from this PR has been published to the following platforms:
+
+            ${{ steps.extract_platforms.outputs.formatted_list }}
+
+            ### Posting Results:
+            ```json
+            ${{ steps.extract_platforms.outputs.posting_results }}
+            ```
+
+            Check the workflow run for detailed results.
