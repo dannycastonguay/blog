@@ -2,9 +2,7 @@
 title: Construction Boots and AI
 ---
 
-This morning, my son Linus was not feeling great. He had a bit of a headache and looked a little tired, so I did not ask him to go to school. I usually do not push my kids to attend school just for the sake of attendance, especially when they are clearly not one hundred percent. More importantly, I actually think that spending a day at home with me, talking, asking questions, watching how I work, is sometimes far more valuable than anything that happens in a classroom. It is part of my belief in homeschooling, or at least a hybrid approach to learning. So he stayed home today.
-
-We decided to go for a walk. I was putting on my construction boots, and he asked me why I had them. It turned into this really rich and thoughtful conversation. I think he asked me about a dozen questions. I will try to capture the spirit and flow of that conversation, keeping the same tone and examples I used when I explained things to him.
+This is a cleaned-up transcript of a real conversation I had with my son Linus. He was not feeling well one morning, so he stayed home from school. I believe that spending time together during the day, asking questions and talking through real-world topics, is one of the best forms of learning. I recorded our conversation and used speech-to-text to capture it. What follows is the exact discussion, lightly edited for clarity and structure, but not embellished or fictionalized. Everything you read below is exactly what he asked and how I answered.
 
 ## 1. Linus asked, “Why do you have construction boots?”
 
