@@ -10,14 +10,14 @@ One piece of advice that stuck with us came from [Donovan Sung](https://x.com/do
 
 Perfectionism doesn’t scale. What scales is clear, fast action.
 
-Your client doesn’t need a perfect deck. They need clarity on pricing, timelines, and deliverables. If you wait three days to polish a “perfect” update, you’re wasting their time. A one-liner on WhatsApp would’ve been better.
+Your client doesn’t need a perfect deck. They need clarity on pricing, timelines, and deliverables. If you wait three days to polish a “perfect” update, you’re wasting their time. A one liner on WhatsApp would’ve been better.
 
 Same goes internally. Some people think they can’t reply until they’ve written the ideal message. Wrong. Move fast. Make things happen. Don’t block progress in the name of polish.
 
 We try to give our clients the greatest gift: time. We don’t waste it. We don’t pad meetings with fluff. We don’t bury the lead. We show up with answers, move things forward, and make decisions.
 
-If you’re building anything—content, product, relationships—stop trying to be perfect. Set a target. Hit it. Move again. Even SpaceX, aiming for Mars, breaks it down into daily goals. They ship. So should you.
+If you’re building anything, content, product, relationships, stop trying to be perfect. Set a target. Hit it. Move again. Even SpaceX, aiming for Mars, breaks it down into daily goals. They ship. So should you.
 
-Done isn’t the enemy of perfect. Done is perfect—because it’s done.
+Done isn’t the enemy of perfect. Done is perfect because it’s done.
 
 Now go ship something.
