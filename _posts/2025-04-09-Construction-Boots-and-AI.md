@@ -46,7 +46,7 @@ And we have plenty of problems that need solving. We do not yet know how to harv
 
 I said, “That is true. Inflation means raw materials cost more. If you want to buy pulp and paper to make toilet paper, it is going to cost more than it did ten years ago. But remember, those costs go up for everyone, big companies and small ones. The big difference is that new businesses that use AI at their core can be much more efficient. They need fewer people, fewer layers of management, and less overhead.
 
-For example, look at my company, bld dot ai. We are a professional services company. We help clients solve problems and deliver knowledge. We compete with giants like Accenture and Infosys. Those companies are big, slow, and expensive. We are small, fast, and efficient. We deliver higher quality at lower prices, and we do it faster.”
+For example, look at my company, [bld.ai](https://bld.ai). We are a professional services company. We help clients solve problems and deliver knowledge. We compete with giants like Accenture and Infosys. Those companies are big, slow, and expensive. We are small, fast, and efficient. We deliver higher quality at lower prices, and we do it faster.”
 
 ## 8. Linus asked, “Then what is your biggest challenge?”
 
