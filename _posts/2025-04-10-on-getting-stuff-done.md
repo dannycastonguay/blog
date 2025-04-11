@@ -20,4 +20,4 @@ If you’re building anything, content, product, relationships, stop trying to b
 
 Done isn’t the enemy of perfect. Done is perfect because it’s done.
 
-Now go ship something.
+Now go ship something!
