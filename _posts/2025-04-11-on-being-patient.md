@@ -1,7 +1,6 @@
 ---
 title: On Being Patient
 ---
-**On Being Patient**
 
 About 20 years ago, when I was a teaching assistant for software engineering at McGill University, one of my reviews amusingly stated: "Danny is a monkey." At the time, I laughed and didn't think much beyond its humorous value but I wondered it had anything to do with how _slowly_ I go went over examples in my tutorials. While I've only been described this way once, a comment I've frequently received from people I've taught is that I'm patient.
 
