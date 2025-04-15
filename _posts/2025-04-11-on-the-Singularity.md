@@ -4,7 +4,7 @@ title: On The AI Singularity
 
 By now you’ve probably heard about the expression popular in Silicon Valley around the singularity, referring to the point where our large language models or artificial intelligence will supposedly surpass human intelligence. The idea is that once AI reaches this point, it will create even smarter AI, and so forth, leaving us behind forever. It’s a bit like the concept of the Big Bang in physics.
 
-Let me stop right here and say clearly: I’m a skeptic.
+Let me stop right here and say clearly: I’m still skeptical.
 
 I’m not skeptical because I don’t understand how intelligent these systems are. I use them every day, probably more than most people. To give you a sense, I currently hold licenses for
 
