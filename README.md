@@ -22,11 +22,11 @@ A robust system that automatically generates and publishes social media content 
 
 ## 📋 Overview
 
-This project automates the process of generating and publishing social media content for blog posts. When new blog posts are added to your repository, the system automatically:
+This project automates the process of generating and publishing social media content for blog posts. When blog posts are added, edited, or deleted in your repository, the system automatically:
 
-1. 🔍 Detects new posts
-2. ✍️ Generates tailored social media content for each platform
-3. 🔄 Creates a pull request with the generated content
+1. 🔍 Detects changed posts (new, edited, deleted)
+2. ✍️ Generates tailored social media content for each platform with versioning
+3. 🔄 Creates a separate pull request for each post with the generated content
 4. 🚀 After merging, publishes the content to configured social media platforms
 
 ## 🔄 Workflow
@@ -35,10 +35,11 @@ The system operates in a two-step workflow:
 
 1. **Content Generation** 📝:
 
-   - When a new page is added to the `_posts` directory (either from a push to main or a PR)
+   - When a page is added, edited, or renamed in the `_posts` directory (either from a push to main or a PR)
    - The first GitHub Action is triggered
-   - It generates social media content using AI
-   - Creates a new PR containing the generated content
+   - It generates social media content using AI with proper versioning
+   - Creates a separate PR for each post containing the generated content
+   - PR titles and branch names include the post name, version, and date
 
 2. **Content Publishing** 📢:
    - After the content PR is merged to main
@@ -145,6 +146,21 @@ Blog Post:
 X post:
 ```
 
+### Content Versioning 📚
+
+The system now supports versioning for social media content:
+
+1. Content is stored in a versioned structure:
+
+   ```
+   social_media/your-page-name/X/v1/content.txt
+   social_media/your-page-name/X/v2/content.txt
+   ```
+
+2. When a post is edited, a new version is automatically created
+3. Version numbers are incremented sequentially (v1, v2, v3, etc.)
+4. Version information is included in branch names, commit messages, and PR titles
+
 ### Adding Media to Posts 🖼️
 
 To include media with your social media posts:
@@ -153,6 +169,12 @@ To include media with your social media posts:
 
    ```
    social_media/your-page-name/X/image.jpg
+   ```
+
+   Or in the version-specific directory:
+
+   ```
+   social_media/your-page-name/X/v1/image.jpg
    ```
 
 2. Supported formats:
@@ -223,10 +245,6 @@ To add support for a new social media platform:
 
 Current limitations of the system:
 
-- **Supported Operations**: The system currently only supports adding new posts. Modifying or deleting existing posts is not supported yet.
-
-> **Note about supported operations** 📌: modifying the content of the page triggers a new extract section media actions but it's overriding the content in the social media
-
 - **X API Limits**: Be aware of X's API rate limits:
   - 17 posts per day for free tier accounts
   - Media uploads count toward daily limits
@@ -234,13 +252,13 @@ Current limitations of the system:
 
 ## 📁 Scripts Directory Overview
 
-- `detect_new_posts.py`: Detects new posts added to the repository
-- `extract_social_media_content.py`: Generates social media content using OpenAI
+- `detect_new_pages.py`: Detects new, edited, and deleted posts in the repository
+- `extract_social_media_content.py`: Generates versioned social media content using OpenAI
 - `post_social_media.py`: Posts content to social media platforms
 - `posting/`: Module containing platform implementations
-  - `poster.py`: Main class for posting content
+  - `poster.py`: Main class for posting content with versioning support
   - `platforms/`: Directory containing platform-specific implementations
-    - `twitter.py`: X platform implementation
+    - `twitter.py`: X platform implementation with support for versioned content
 
 ## 👨‍💻 Development Guide
 
@@ -261,7 +279,32 @@ To set up the project for development:
 
    - Add the required secrets to your repository settings
 
-4. **Start adding new posts**:
-   - Add new markdown files to the `_posts` directory
+4. **Working with posts**:
+   - Add, edit, or rename markdown files in the `_posts` directory
    - Commit and push to main or create a PR
-   - The workflow will automatically generate content (but not publish until the PR from the first action is merged into main)
+   - The workflow will automatically:
+     - Detect changes (new, edited, deleted, or renamed posts)
+     - Generate versioned content for each changed post
+     - Create a separate PR for each post with version information
+     - Skip processing for deleted posts
+   - Content will be published after the PR is merged into main
+
+## 🔄 File Change Handling
+
+The system handles different types of file changes:
+
+- **New Posts**: Generates new social media content
+- **Edited Posts**: Creates a new version of the social media content
+- **Renamed Posts**: Treated as new posts with fresh content
+- **Deleted Posts**: Skipped in the content generation process
+- **Invalid Characters**: Post names with invalid Git branch characters (spaces, special characters) are automatically sanitized for branch names
+- **Folder Names with Spaces**: Both the posting script and publishing workflow properly handle folder names containing spaces
+
+## 🔧 Branch Name Handling
+
+The system includes several features for handling branch names:
+
+- **Sanitization**: Automatically replaces invalid Git branch characters (spaces, ~, ^, :, ?, \*, [, @{, \) with underscores
+- **Versioning**: Includes version information in branch names (`{page_name}_{version}_{date}_social_media`)
+- **Conflict Resolution**: Handles cases when a branch already exists by adding a timestamp
+- **Suffix Preservation**: Always maintains the required `_social_media` suffix for compatibility with other workflows

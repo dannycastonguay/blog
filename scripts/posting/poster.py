@@ -84,9 +84,13 @@ class SocialMediaPoster:
         The folder structure should be:
         folder_path/
             platform1/
-                content.txt
+                v1/
+                    content.txt
+                v2/
+                    content.txt
             platform2/
-                content.txt
+                v1/
+                    content.txt
             ...
         
         Args:
@@ -107,20 +111,39 @@ class SocialMediaPoster:
         
         for platform_folder in platform_folders:
             platform_name = platform_folder.name
-            content_file = platform_folder / "content.txt"
-            
-            # Skip if content file doesn't exist
-            if not content_file.exists():
-                print(f"Content file not found for {page_name}/{platform_name}")
-                continue
             
             # Skip if platform is not supported
             if platform_name not in self.platforms:
                 print(f"Platform '{platform_name}' is not supported")
                 continue
             
-            # Post content and get result
-            result = self._post_content(content_file, platform_name, page_name)
+            # Find the latest version folder
+            version_folders = [v for v in platform_folder.iterdir() if v.is_dir() and v.name.startswith('v')]
+            
+            if not version_folders:
+                # Check for legacy structure (no version folders)
+                content_file = platform_folder / "content.txt"
+                if content_file.exists():
+                    # Post content and get result
+                    result = self._post_content(content_file, platform_name, page_name)
+                else:
+                    print(f"No version folders or content file found for {page_name}/{platform_name}")
+                    continue
+            else:
+                # Sort version folders by version number
+                version_folders.sort(key=lambda v: int(v.name[1:]) if v.name[1:].isdigit() else 0, reverse=True)
+                
+                # Get the latest version folder
+                latest_version = version_folders[0]
+                content_file = latest_version / "content.txt"
+                
+                # Skip if content file doesn't exist
+                if not content_file.exists():
+                    print(f"Content file not found for {page_name}/{platform_name}/{latest_version.name}")
+                    continue
+                
+                # Post content and get result
+                result = self._post_content(content_file, platform_name, page_name)
             
             # Store result for this platform
             platform_results[platform_name] = result

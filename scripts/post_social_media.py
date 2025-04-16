@@ -36,8 +36,10 @@ def post_content(folder_path: str, output_path: str = "posting_results.json") ->
         # Post from each folder
         all_results = []
         for folder in page_folders:
-            print(f"\nProcessing folder: {folder}")
-            results = poster.post_from_folder(str(folder))
+            # Handle folder names with spaces by using the string representation
+            folder_str = str(folder)
+            print(f"\nProcessing folder: {folder_str}")
+            results = poster.post_from_folder(folder_str)
             all_results.extend(results)
         
         # Print summary
@@ -47,7 +49,10 @@ def post_content(folder_path: str, output_path: str = "posting_results.json") ->
             print(f"✅ Results saved to {output_path}")
     else:
         # Post from specific folder
-        results = poster.post_from_folder(str(folder_path))
+        # Handle folder names with spaces by using the string representation
+        folder_str = str(folder_path)
+        print(f"\nProcessing folder: {folder_str}")
+        results = poster.post_from_folder(folder_str)
         
         # Print summary
         if results:

@@ -11,7 +11,7 @@ on:
       - "social_media/**"
 
 jobs:
-  extract-content:
+  detect-changes:
     # Skip if it's a revert commit or from a branch ending with _social_media
     # Also skip if the commit message contains "Merge pull request" and the branch name ends with _social_media
     if: |
@@ -19,9 +19,10 @@ jobs:
       !endsWith(github.event.ref, '_social_media') &&
       !(contains(github.event.head_commit.message, 'Merge pull request') && contains(github.event.head_commit.message, '_social_media'))
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
+    outputs:
+      changed_posts: ${{ steps.detect.outputs.changed_posts }}
+      new_posts: ${{ steps.detect.outputs.new_posts }}
+      modified_posts: ${{ steps.detect.outputs.modified_posts }}
 
     steps:
       - name: Checkout repository
@@ -39,7 +40,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Detect new and updated posts
+      - name: Detect changed posts
         id: detect
         run: |
           # Get the before and after commit SHAs
@@ -47,60 +48,60 @@ jobs:
           AFTER_SHA="${{ github.event.after }}"
           echo "Comparing commits $BEFORE_SHA and $AFTER_SHA"
 
-          # Get all changed files between the commits
-          CHANGED_FILES=$(git diff --name-status $BEFORE_SHA $AFTER_SHA | grep "^[AM]" | awk '{print $2}' | grep "^_posts/.*\.md$" || echo "")
+          # Use the refactored script to detect changes
+          python scripts/detect_new_pages.py $BEFORE_SHA $AFTER_SHA
 
-          # Output the changed posts
-          if [ -n "$CHANGED_FILES" ]; then
-            echo "Found changed posts:"
-            echo "$CHANGED_FILES"
+  extract-content:
+    needs: detect-changes
+    if: needs.detect-changes.outputs.changed_posts != ''
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    strategy:
+      matrix:
+        post: ${{ fromJson(needs.detect-changes.outputs.changed_posts) }}
+      # Limit to 5 concurrent jobs to avoid rate limiting
+      max-parallel: 5
+      # Don't cancel other jobs if one fails
+      fail-fast: false
+
+    steps:
+      # Check if the post exists before proceeding
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Full history for branch creation
+
+      # Check if the post file exists
+      - name: Check if post exists
+        id: check_exists
+        run: |
+          if [ -f "${{ matrix.post }}" ]; then
+            echo "Post ${{ matrix.post }} exists, proceeding with extraction"
+            echo "exists=true" >> $GITHUB_OUTPUT
           else
-            echo "No changed posts detected"
+            echo "Post ${{ matrix.post }} does not exist, skipping extraction"
+            echo "exists=false" >> $GITHUB_OUTPUT
           fi
 
-          # Set the output variable
-          echo "changed_posts<<EOF" >> $GITHUB_OUTPUT
-          echo "$CHANGED_FILES" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
+      - name: Set up Python
+        if: steps.check_exists.outputs.exists == 'true'
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
 
-      - name: Generate branch name
-        id: branch
+      - name: Install dependencies
+        if: steps.check_exists.outputs.exists == 'true'
         run: |
-          # Process the first changed page to generate branch name
-          if [ -n "${{ steps.detect.outputs.changed_posts }}" ]; then
-            IFS=',' read -ra POSTS <<< "${{ steps.detect.outputs.changed_posts }}"
-            # Get the first page
-            PAGE="${POSTS[0]}"
-            
-            # Extract page name from path
-            # Remove _posts/ prefix and .md suffix
-            PAGE_NAME=$(basename "$PAGE" .md)
-            # If page name has date prefix (YYYY-MM-DD-), remove it
-            PAGE_NAME=$(echo "$PAGE_NAME" | sed -E 's/^[0-9]{4}-[0-9]{2}-[0-9]{2}-//')
-            
-            # Create branch name in the format {page_name}_{date}_social_media
-            TODAY=$(date +'%Y-%m-%d')
-            BRANCH_NAME="${PAGE_NAME}_${TODAY}_social_media"
-            
-            echo "Using page: $PAGE -> Branch: $BRANCH_NAME"
-            echo "branch_name=$BRANCH_NAME" >> $GITHUB_OUTPUT
-          else
-            BRANCH_NAME="$(date +'%Y-%m-%d')_social_media"
-            echo "No posts detected, using fallback branch name: $BRANCH_NAME"
-            echo "branch_name=$BRANCH_NAME" >> $GITHUB_OUTPUT
-          fi
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-      - name: Create new branch
-        if: steps.detect.outputs.changed_posts != ''
-        run: |
-          git config --global user.name "GitHub Actions Bot"
-          git config --global user.email "actions@github.com"
-          # Set up authentication for all git operations
-          git config --global url."https://${{ secrets.GH_PAT }}@github.com/".insteadOf "https://github.com/"
-          git checkout -b ${{ steps.branch.outputs.branch_name }}
-
+      # First extract the content to get the version
       - name: Extract social media content
-        if: steps.detect.outputs.changed_posts != ''
+        if: steps.check_exists.outputs.exists == 'true'
+        id: extract
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
@@ -110,17 +111,92 @@ jobs:
             exit 1
           fi
 
-          # Process each changed page
-          IFS=',' read -ra POSTS <<< "${{ steps.detect.outputs.changed_posts }}"
-          for page in "${POSTS[@]}"; do
-            echo "Processing page: $page"
-            python scripts/extract_social_media_content.py "$page" "X"
-            python scripts/extract_social_media_content.py "$page"
-          done
+          # Process the post
+          echo "Processing post: ${{ matrix.post }}"
+          OUTPUT=$(python scripts/extract_social_media_content.py "${{ matrix.post }}")
 
+          # Extract the version number from the output
+          # Example output line: "✅ X content saved to social_media/page_name/X/v2/content.txt"
+          VERSION=$(echo "$OUTPUT" | grep -o 'v[0-9]\+' | head -1 | sed 's/v//')
+          if [ -z "$VERSION" ]; then
+            VERSION="1"  # Default to version 1 if not found
+          fi
+
+          echo "Detected version: v$VERSION"
+          echo "version=v$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Generate branch name
+        if: steps.check_exists.outputs.exists == 'true'
+        id: branch
+        run: |
+          # Extract page name from path
+          PAGE="${{ matrix.post }}"
+
+          # Remove _posts/ prefix and .md suffix
+          PAGE_NAME=$(basename "$PAGE" .md)
+          # If page name has date prefix (YYYY-MM-DD-), remove it
+          PAGE_NAME=$(echo "$PAGE_NAME" | sed -E 's/^[0-9]{4}-[0-9]{2}-[0-9]{2}-//')
+
+          # Sanitize page name for branch name (replace invalid characters with underscores)
+          # Git branch names cannot contain:
+          # - Space
+          # - Tilde ~
+          # - Caret ^
+          # - Colon :
+          # - Question mark ?
+          # - Asterisk *
+          # - Open bracket [
+          # - At sign @{
+          # - Backslash \
+          # - Control characters (ASCII 0-31)
+          # - DEL character (ASCII 127)
+          SANITIZED_PAGE_NAME=$(echo "$PAGE_NAME" | sed -E 's/[ ~^:?*\[@{\\]/_/g')
+
+          # Create branch name in the format {page_name}_{version}_{date}_social_media
+          TODAY=$(date +'%Y-%m-%d')
+          BRANCH_NAME="${SANITIZED_PAGE_NAME}_${{ steps.extract.outputs.version }}_${TODAY}_social_media"
+
+          echo "Using page: $PAGE -> Branch: $BRANCH_NAME"
+          echo "branch_name=$BRANCH_NAME" >> $GITHUB_OUTPUT
+          echo "page_name=$PAGE_NAME" >> $GITHUB_OUTPUT
+
+      - name: Check if branch exists
+        if: steps.check_exists.outputs.exists == 'true'
+        id: check_branch
+        run: |
+          # Check if branch already exists
+          if git ls-remote --heads origin ${{ steps.branch.outputs.branch_name }} | grep ${{ steps.branch.outputs.branch_name }}; then
+            echo "Branch already exists, will use a unique name"
+            # Generate a unique branch name by adding a timestamp
+            TIMESTAMP=$(date +'%H%M%S')
+            
+            # Extract the base name without the _social_media suffix
+            BASE_NAME=$(echo "${{ steps.branch.outputs.branch_name }}" | sed 's/_social_media$//')
+            
+            # Create a new unique branch name that still ends with _social_media
+            UNIQUE_BRANCH="${BASE_NAME}_${TIMESTAMP}_social_media"
+            
+            echo "unique_branch=$UNIQUE_BRANCH" >> $GITHUB_OUTPUT
+            echo "branch_exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "Branch does not exist"
+            echo "unique_branch=${{ steps.branch.outputs.branch_name }}" >> $GITHUB_OUTPUT
+            echo "branch_exists=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create new branch
+        if: steps.check_exists.outputs.exists == 'true'
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          # Set up authentication for all git operations
+          git config --global url."https://${{ secrets.GH_PAT }}@github.com/".insteadOf "https://github.com/"
+          git checkout -b ${{ steps.check_branch.outputs.unique_branch }}
+
+      # Check for changes after extraction
       - name: Check for changes
+        if: steps.check_exists.outputs.exists == 'true'
         id: check_changes
-        if: steps.detect.outputs.changed_posts != ''
         run: |
           git add social_media/
           # Check if there are any changes to commit
@@ -133,30 +209,34 @@ jobs:
           fi
 
       - name: Commit changes
-        if: steps.detect.outputs.changed_posts != '' && steps.check_changes.outputs.has_changes == 'true'
+        if: steps.check_exists.outputs.exists == 'true' && steps.check_changes.outputs.has_changes == 'true'
         run: |
-          git commit -m "Add social media content for new and updated posts"
+          # Get current date
+          TODAY=$(date +'%Y-%m-%d')
+          git commit -m "${{ steps.branch.outputs.page_name }} social media content ${{ steps.extract.outputs.version }} $TODAY"
 
       - name: Push branch
-        if: steps.detect.outputs.changed_posts != '' && steps.check_changes.outputs.has_changes == 'true'
+        if: steps.check_exists.outputs.exists == 'true' && steps.check_changes.outputs.has_changes == 'true'
         run: |
           # Use a different approach for authentication
           git config --global url."https://${{ secrets.GH_PAT }}@github.com/".insteadOf "https://github.com/"
-          git push origin ${{ steps.branch.outputs.branch_name }}
+          git push origin ${{ steps.check_branch.outputs.unique_branch }}
 
       - name: Create Pull Request
-        if: steps.detect.outputs.changed_posts != '' && steps.check_changes.outputs.has_changes == 'true'
+        if: steps.check_exists.outputs.exists == 'true' && steps.check_changes.outputs.has_changes == 'true'
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
-          # Create pull request using GitHub CLI instead of the action
-          # This avoids the issue with the action trying to push the branch again
-          gh pr create \
-            --title "Add social media content for new and updated posts" \
-            --body "This PR adds social media content for the following new or updated posts:
+          # Get current date
+          TODAY=$(date +'%Y-%m-%d')
 
-            ${{ steps.detect.outputs.changed_posts }}
+          # Create pull request using GitHub CLI
+          gh pr create \
+            --title "${{ steps.branch.outputs.page_name }} social media content ${{ steps.extract.outputs.version }} $TODAY" \
+            --body "This PR adds social media content for the post:
+
+            ${{ matrix.post }}
 
             The content will be published to social media platforms when this PR is merged." \
             --base ${{ github.ref_name }} \
-            --head ${{ steps.branch.outputs.branch_name }}
+            --head ${{ steps.check_branch.outputs.unique_branch }}

@@ -92,15 +92,42 @@ def get_page_name(filepath):
     if len(page_name) > 11 and page_name[4] == '-' and page_name[7] == '-' and page_name[10] == '-':
         page_name = page_name[11:]
     
+    # Ensure the page name is properly escaped for use in folder names
+    # This preserves spaces and special characters in the folder name
     return page_name
 
 def save_social_media_content(page_name, platform, content):
-    # Create directory structure if it doesn't exist
-    directory = os.path.join("social_media", page_name, platform)
-    os.makedirs(directory, exist_ok=True)
+    # Base directory for this page and platform
+    base_dir = os.path.join("social_media", page_name, platform)
+    
+    # Find the latest version number
+    latest_version = 0
+    if os.path.exists(base_dir):
+        # Get all version directories
+        version_dirs = [d for d in os.listdir(base_dir) if d.startswith('v') and os.path.isdir(os.path.join(base_dir, d))]
+        
+        # Extract version numbers
+        version_numbers = []
+        for d in version_dirs:
+            try:
+                # Extract number from 'v1', 'v2', etc.
+                version_num = int(d[1:])
+                version_numbers.append(version_num)
+            except ValueError:
+                # Skip directories that don't follow the pattern
+                continue
+        
+        # Find the highest version number
+        if version_numbers:
+            latest_version = max(version_numbers)
+    
+    # Create new version directory
+    new_version = latest_version + 1
+    version_dir = os.path.join(base_dir, f"v{new_version}")
+    os.makedirs(version_dir, exist_ok=True)
     
     # Save content to file
-    filepath = os.path.join(directory, "content.txt")
+    filepath = os.path.join(version_dir, "content.txt")
     with open(filepath, 'w', encoding='utf-8') as f:
         f.write(content)
     
