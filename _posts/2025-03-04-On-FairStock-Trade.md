@@ -42,15 +42,23 @@ Our ambition is infrastructure-level: minimal friction, maximal transparency, an
 
 Importantly, everything we’ve built around traditional shares seamlessly extends into Web 3.0 and tokens.
 
-### 5. Web 3.0 and Tokenization
+### 5. Web3 and Tokenization
 
-Every mechanism we’ve created for managing equity—vesting schedules, governance processes, auctions for transparent valuation, and continuous liquidity—also applies directly to Web 3.0 tokens. The primary innovation of FairStock.Trade lies in combining the rigorous documentation, governance structures, and market transparency typical of Web 2.0 equities with the speed and efficiency inherent in blockchain-based tokens.
+Every mechanism we’ve created for managing equity also applies directly to Web3 tokens. For instance:
+
+1. Vesting schedules
+2. Governance processes
+3. Auctions for transparent valuation
+4. Continuous liquidity
+
+The primary innovation of FairStock.Trade lies in combining the rigorous documentation, governance structures, and market transparency typical of Web 2.0 equities with the speed and efficiency inherent in blockchain-based tokens.
 
 Currently, token markets provide liquidity and efficiency but often fall short on transparency and clear documentation standards, leading to uncertainty or speculative risks. FairStock.Trade bridges this gap by offering one unified platform that seamlessly integrates traditional equities and blockchain tokens, maintaining rigorous documentation, clear governance, and accurate mark-to-market valuations. This allows founders to initially set up traditional corporations and, when ready, effortlessly issue tokens to reward early backers, manage loyalty points, or engage with communities, all within the same robust infrastructure. Investors benefit from both speculative opportunities in tokens and stable long-term investment opportunities in traditional shares under one transparent umbrella.
 
 ### 6. Numerical Example
 
 Consider a hypothetical startup:
+
 1. Initial valuation: $10 million
 2. The founder uses FairStock.Trade to automate monthly auctions, planning to sell 1% each month.
 3. In month one, a Dutch auction starts at $200,000 for 1%. Investors bid early, and the full 1% is bought at $180,000, setting the company's valuation at $18 million.
@@ -59,6 +67,7 @@ Consider a hypothetical startup:
 6. Early investors and employees who initially bought shares at $180,000 per 1% can now choose to sell their shares via a Seller-Price auction at current valuations, realizing liquidity without waiting years for an IPO.
 
 Compare this to traditional venture capital:
+
 - Typically, startups spend months fundraising, limiting CEO productivity.
 - Investors lock their capital for 7-10 years, waiting for liquidity events like acquisitions or IPOs.
 - FairStock.Trade drastically reduces both fundraising and liquidity timelines, creating a dynamic, real-time market.
