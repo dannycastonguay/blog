@@ -40,8 +40,15 @@ Additionally, FairStock.Trade introduces the innovative concept of ETF-like fund
 
 Our ambition is infrastructure-level: minimal friction, maximal transparency, and interactive-broker-level transaction fees—pennies per share—to facilitate significant, efficient capital flows. We're starting with U.S.-based startups and accredited investors to comply with regulatory frameworks, with a clear vision for global expansion to financial centers such as Singapore, London, and Tokyo.
 
+Importantly, everything we’ve built around traditional shares seamlessly extends into Web 3.0 and tokens.
 
-### 5. Numerical Example
+### 5. Web 3.0 and Tokenization
+
+Every mechanism we’ve created for managing equity—vesting schedules, governance processes, auctions for transparent valuation, and continuous liquidity—also applies directly to Web 3.0 tokens. The primary innovation of FairStock.Trade lies in combining the rigorous documentation, governance structures, and market transparency typical of Web 2.0 equities with the speed and efficiency inherent in blockchain-based tokens.
+
+Currently, token markets provide liquidity and efficiency but often fall short on transparency and clear documentation standards, leading to uncertainty or speculative risks. FairStock.Trade bridges this gap by offering one unified platform that seamlessly integrates traditional equities and blockchain tokens, maintaining rigorous documentation, clear governance, and accurate mark-to-market valuations. This allows founders to initially set up traditional corporations and, when ready, effortlessly issue tokens to reward early backers, manage loyalty points, or engage with communities, all within the same robust infrastructure. Investors benefit from both speculative opportunities in tokens and stable long-term investment opportunities in traditional shares under one transparent umbrella.
+
+### 6. Numerical Example
 
 Consider a hypothetical startup:
 1. Initial valuation: $10 million
@@ -58,3 +65,4 @@ Compare this to traditional venture capital:
 
 FairStock.Trade isn't merely a marketplace—it's a paradigm shift. If you're excited by transparent investing in influential founders and future-focused companies, join us on this transformative journey.
 
+Whether it’s through traditional shares or blockchain tokens, we’re building the future of transparent, efficient, and flexible investing.
