@@ -99,6 +99,10 @@ jobs:
           TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
           TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
           TWITTER_ACCESS_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
+          LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+          LINKEDIN_CLIENT_ID: ${{ secrets.LINKEDIN_CLIENT_ID }}
+          LINKEDIN_CLIENT_SECRET: ${{ secrets.LINKEDIN_CLIENT_SECRET }}
+          LINKEDIN_USER_ID: ${{ secrets.LINKEDIN_USER_ID }}
         run: |
           # Use the page folders directly from the check-new-folders step
           # Handle case where there are no folders (should not happen due to if condition above)
@@ -147,7 +151,7 @@ jobs:
             echo "is_merge_commit=false" >> $GITHUB_OUTPUT
           fi
 
-      - name: Extract successful platforms and posting results
+      - name: Extract platforms and posting results
         id: extract_platforms
         if: steps.check-content.outputs.has_content == 'true'
         run: |
@@ -156,7 +160,7 @@ jobs:
           echo "Successful platforms: $PLATFORMS"
           echo "platforms=$PLATFORMS" >> $GITHUB_OUTPUT
 
-          # Create a formatted list for the PR comment
+          # Create a formatted list for successful platforms
           if [ -n "$PLATFORMS" ]; then
             FORMATTED_LIST=""
             IFS=',' read -ra PLATFORM_ARRAY <<< "$PLATFORMS"
@@ -168,6 +172,25 @@ jobs:
             echo "EOF" >> $GITHUB_OUTPUT
           else
             echo "formatted_list=- None (check logs for errors)" >> $GITHUB_OUTPUT
+          fi
+
+          # Parse the posting results to get failed platforms
+          FAILED_PLATFORMS=$(jq -r '.[] | select(.status == "error") | .platform' posting_results.json | sort -u | tr '\n' ',' | sed 's/,$//')
+          echo "Failed platforms: $FAILED_PLATFORMS"
+          echo "failed_platforms=$FAILED_PLATFORMS" >> $GITHUB_OUTPUT
+
+          # Create a formatted list for failed platforms with error messages
+          if [ -n "$FAILED_PLATFORMS" ]; then
+            FAILED_LIST=""
+            # Use process substitution to avoid subshell issues
+            while IFS=$'\t' read -r platform error; do
+              FAILED_LIST="$FAILED_LIST- **$platform**: $error\n"
+            done < <(jq -r '.[] | select(.status == "error") | [.platform, .error] | @tsv' posting_results.json)
+            echo "failed_list<<EOF" >> $GITHUB_OUTPUT
+            echo -e "$FAILED_LIST" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+          else
+            echo "failed_list=" >> $GITHUB_OUTPUT
           fi
 
           # Get the posting results content
@@ -209,13 +232,15 @@ jobs:
           issue-number: ${{ steps.extract_branch.outputs.pr_number }}
           token: ${{ secrets.GH_PAT }}
           body: |
-            ## Social Media Content Published ✅
+            ## Social Media Content Publishing Results
 
-            The social media content from this PR has been published to the following platforms:
-
+            ### Successfully Published To:
             ${{ steps.extract_platforms.outputs.formatted_list }}
 
-            ### Posting Results:
+            ### Failed Platforms:
+            ${{ steps.extract_platforms.outputs.failed_list || '- None' }}
+
+            ### Complete Posting Results:
             ```json
             ${{ steps.extract_platforms.outputs.posting_results }}
             ```

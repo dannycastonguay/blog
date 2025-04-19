@@ -9,6 +9,7 @@ from typing import Dict, List, Any, Optional
 
 from .platforms import SocialMediaPlatform
 from .platforms.twitter import TwitterPlatform
+from .platforms.linkedin import LinkedInPlatform
 from typing import Union, List
 
 class SocialMediaPoster:
@@ -45,8 +46,8 @@ class SocialMediaPoster:
         # Define all supported platforms
         supported_platforms = {
             "X": TwitterPlatform,
+            "LinkedIn": LinkedInPlatform,
             # Add more platforms here as they are implemented
-            # "LinkedIn": LinkedInPlatform,
         }
         
         if keys_only:

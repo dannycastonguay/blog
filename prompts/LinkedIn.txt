@@ -1,0 +1,8 @@
+Summarize the following blog post into an engaging and professional LinkedIn post. Use a thoughtful, insightful tone that demonstrates expertise. Start with a compelling hook or thought-provoking statement. Include a key insight or lesson learned. End with a call to action or question that encourages professional discussion.
+
+The post should be concise but you can aim for 300-400 characters. Use professional language and avoid excessive emojis. Format with appropriate line breaks for readability.
+
+Blog Post:
+{content}
+
+LinkedIn post:
