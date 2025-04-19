@@ -2,9 +2,9 @@
 title: On Owning Your Mistakes
 ---
 
-My parents divorced when I was around eleven. In many ways I am grateful, because I ended up with two dads and learned a lot from both.
+My parents divorced when I was around eleven. In many ways I am grateful, because I ended up with two sets of parents and learned a lot from both dads and both moms.
 
-Over the years more father figures and mentors showed up. Coaches, professors, my graduate advisor, mentors at work, succeseful entrepreneurs, and more. Some don't even know I consider them mentors. Some are just authors I read. One who unlocked a lot inside me was Paul Graham. During YC we walked three times for about 45 minutes and I also read some (most?) of his essays. He probably doesn't remember me. What he said echoed what my other mentors had told me, but he said it with striking efficiency.
+Over the years more mentors showed up. Coaches, professors, my graduate advisor, mentors at work, succeseful entrepreneurs, and more. Some don't even know I consider them mentors. Some are just authors I read. One who unlocked a lot inside me was Paul Graham. During YC we walked three times for about 45 minutes and I also read some (most?) of his essays. He probably doesn't remember me. What he said echoed what my other mentors had told me, but he said it with striking efficiency.
 
 The line that stuck was, in the long run it is easier to be good than to look good. Not "better". "Easier". For a lazy person, "EASY" is a button we like to press! That idea went straight to the core of how I operate. And here's a second order effect of this mindset: I own my mistakes because that makes me "more good".
 
