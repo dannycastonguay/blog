@@ -259,8 +259,9 @@ body[data-theme="dark"] {
   }
   
   .sun-icon {
-    color: rgba(0, 0, 0, 0.85);
+    color: rgba(0, 0, 0, 0.6);
     opacity: 0.9;
+    stroke: rgba(0, 0, 0, 0.6);
   }
   
   .theme-toggle-track {

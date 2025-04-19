@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
     </svg>
     <div class="theme-toggle-track">
-      <div class="theme-toggle-knob ${theme === 'dark' ? 'active' : ''}"></div>
+      <div class="theme-toggle-knob ${theme === 'dark' ? '' : 'active'}"></div>
     </div>
     <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
       <circle cx="12" cy="12" r="5"></circle>
@@ -61,9 +61,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Update toggle appearance
     const knob = toggleSwitch.querySelector('.theme-toggle-knob');
     if (newTheme === 'dark') {
-      knob.classList.add('active');
-    } else {
       knob.classList.remove('active');
+    } else {
+      knob.classList.add('active');
     }
   }
 
