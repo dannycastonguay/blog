@@ -1,5 +1,5 @@
 ---
-title: Laughing Beyond the Overton Window.md
+title: Laughing Beyond the Overton Window
 ---
 
 I think that as parents, older siblings, and role models, one of the most important things we can do is nurture a child’s sense of humor.
