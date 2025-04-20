@@ -23,3 +23,5 @@ Comedians such as Joe Rogan, Dave Chappelle, and Jerry Seinfeld shape politics a
 I long for more great comedians who will bring us stories, cartoons, shows, films, and illustrations. While fresh classics are rare, the existing catalog forms a living record of modern values and philosophies that we can watch, share, and discuss with our children.
 
 The lesson is simple: spend time developing your kids’ humor. Listen, laugh, and you will uncover insights that make them and you better.
+
+😅
