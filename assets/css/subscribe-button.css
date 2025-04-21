@@ -1,0 +1,91 @@
+/* Subscribe Button Styles */
+.footer-subscribe {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.footer-subscribe input[type="email"] {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+  width: 250px;
+  margin-bottom: 0px;
+}
+
+.subscribe-button {
+  background-color: #5197ad;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.subscribe-button:hover {
+  background-color: #3f879d;
+}
+
+.subscribe-button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.loading-spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+  margin-left: 5px;
+  display: none;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.subscribe-message {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  z-index: 1000;
+  display: none;
+  max-width: 300px;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+@media (max-width: 768px) {
+  .footer-subscribe {
+    margin-left: 0;
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+  }
+
+  .footer-subscribe input[type="email"] {
+    flex-grow: 1;
+    width: auto;
+  }
+}
