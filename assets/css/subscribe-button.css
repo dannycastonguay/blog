@@ -6,6 +6,11 @@
   padding: 0px;
 }
 
+form {
+  padding: 0px;
+  margin: 0px;
+}
+
 .footer-subscribe input[type="email"] {
   padding: 6px 10px;
   border: 1px solid #ddd;
@@ -23,7 +28,7 @@
   cursor: pointer;
   font-size: 14px;
   transition: background-color 0.3s;
-  border-radius: none;
+  border-radius: 0;
 }
 
 .subscribe-button:hover {
