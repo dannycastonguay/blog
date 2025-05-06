@@ -12,6 +12,9 @@ from .platforms import SocialMediaPlatform
 from .platforms.twitter import TwitterPlatform
 from .platforms.linkedin import LinkedInPlatform
 from .platforms.resend import ResendPlatform
+from .platforms.instagram import InstagramPlatform
+from .platforms.tiktok import TikTokPlatform
+from .platforms.reddit import RedditPlatform
 from typing import Union, List
 
 
@@ -53,7 +56,9 @@ class SocialMediaPoster:
             "X": TwitterPlatform,
             "LinkedIn": LinkedInPlatform,
             "Resend": ResendPlatform,
-            # Add more platforms here as they are implemented
+            "Instagram": InstagramPlatform,
+            "TikTok": TikTokPlatform,
+            "Reddit": RedditPlatform,
         }
 
         if keys_only:

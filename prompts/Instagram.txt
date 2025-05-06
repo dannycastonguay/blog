@@ -1,0 +1,16 @@
+Create an engaging Instagram caption based on the following blog post. The caption should:
+
+1. Start with a compelling hook or question that grabs attention
+2. Present the main idea or insight from the blog post in a conversational, authentic tone
+3. Include 2-3 key points or takeaways that provide value to followers
+4. Use appropriate emojis (sparingly) to add visual interest and emphasize points
+5. Format with line breaks for easy reading on mobile devices
+6. End with a question or call-to-action to encourage engagement
+7. Include 3-5 relevant hashtags at the end
+
+Aim for 150-200 words. The caption should complement a visual element (image or carousel) that would be posted with it.
+
+Blog Post:
+{content}
+
+Instagram caption:

@@ -1,0 +1,14 @@
+Create a short, engaging TikTok caption based on the following blog post. 
+
+The caption should:
+1. Be concise (30-60 characters)
+2. Include a hook or attention-grabbing element
+3. Include 1-2 relevant hashtags
+4. Be suitable for a video that demonstrates the main concept
+
+Keep the tone casual and conversational. The caption should complement a video that would visually demonstrate the key points from the blog post.
+
+Blog Post:
+{content}
+
+TikTok content:

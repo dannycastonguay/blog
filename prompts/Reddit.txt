@@ -1,0 +1,17 @@
+Create a Reddit post based on the following blog post. Your post should:
+
+1. Include a clear, specific title that follows Reddit conventions (not clickbait)
+2. Start with a brief introduction that establishes context (1-2 sentences)
+3. Present key points in a well-structured format using Reddit markdown:
+   - **Bold** for important concepts
+   - *Italics* for emphasis
+   - > Blockquotes for direct quotes or key takeaways
+   - Bullet points or numbered lists for clarity
+4. End with 1-2 discussion questions to encourage community engagement
+
+Keep the tone authentic and informative - Reddit users value genuine content that invites discussion. Avoid promotional language that would get downvoted.
+
+Blog Post:
+{content}
+
+Reddit post:
