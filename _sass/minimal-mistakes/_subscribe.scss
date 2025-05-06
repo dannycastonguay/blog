@@ -1,3 +1,7 @@
+form {
+  padding: 0px;
+}
+
 /* Subscribe Button Styles */
 .footer-subscribe {
   display: inline-flex;
@@ -11,7 +15,7 @@
   border: 1px solid #ddd;
   border-radius: 4px 0 0 4px;
   font-size: 14px;
-  width: 180px;
+  width: 250px;
   height: 36px; /* Increased height */
   box-sizing: border-box;
   margin: 0; /* Reset margin */
@@ -23,7 +27,7 @@
   color: white;
   border: none;
   padding: 0 12px;
-  border-radius: 0 4px 4px 0;
+  // border-radius: 0 4px 4px 0;
   cursor: pointer;
   font-size: 14px;
   transition: background-color 0.3s;
@@ -105,6 +109,7 @@
     margin-left: 0;
     margin-top: 15px;
     width: 100%;
+    margin-bottom: 8px;
   }
 
   .footer-subscribe input[type="email"] {
