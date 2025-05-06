@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
       loadingSpinner.style.display = "inline-block";
 
       try {
+        // TODO: Replace with your Supabase function URL
         const response = await fetch(
           "https://eaqibtmhonekgkzkuitp.supabase.co/functions/v1/email_subscriptions",
           {
