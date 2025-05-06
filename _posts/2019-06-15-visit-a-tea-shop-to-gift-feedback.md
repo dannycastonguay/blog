@@ -4,7 +4,7 @@ category: "Team health"
 tag: [Feedback]
 toc: true
 ---
-     
+        
 Giving good feedback to people around you (both at work and in your private life) can be an excellent time investment. If the people around you become stronger, you will benefit. I want to help you achieve that by giving you two things: 1) a template that I learned as a consultant, and 2) a memorable list of desirable traits to think about when coming up with feedback.
 
 <span><audio id="myAudio" controls>
