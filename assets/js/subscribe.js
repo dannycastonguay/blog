@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
       try {
         // TODO: Replace with your Supabase function URL
         const response = await fetch(
-          "https://eaqibtmhonekgkzkuitp.supabase.co/functions/v1/email_subscriptions",
+          "https://gxsdfzggnxxuktsgrmlz.supabase.co/functions/v1/email_subscriptions",
           {
             method: "POST",
             headers: {
