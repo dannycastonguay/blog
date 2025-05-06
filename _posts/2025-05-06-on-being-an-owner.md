@@ -27,4 +27,4 @@ A big part of what makes bld.ai unique is that we empower people to be owners—
 
 Clients often tell us that the first proposal they receive from bld.ai providers is the best they’ve ever seen. This frequent reaction occurs precisely because most clients haven’t previously worked with people who demonstrate such strong ownership.
 
-It’s a skill anyone can develop at any age. All it takes is deciding to care deeply about what you do, and this mindset will reward you throughout your entire career.
+It’s a skill anyone can develop at any age. All it takes is deciding to care deeply about what you do, and this mindset will reward you throughout your entire career. 
