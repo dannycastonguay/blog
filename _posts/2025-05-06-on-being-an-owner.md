@@ -2,9 +2,7 @@
 title: On Being an Owner
 ---
 
-I started this blog in 2019 when I published a post about [gifting feedback](https://blog.dannycastonguay.com/team%20health/visit-a-tea-shop-to-gift-feedback/).
-
-One feedback I’ve probably given hundreds of times centers around the concept of being an owner.
+I started this blog in 2019 when I published a post about [gifting feedback](https://blog.dannycastonguay.com/team%20health/visit-a-tea-shop-to-gift-feedback/). One feedback I’ve probably given hundreds of times centers around the concept of being an owner.
 
 > An Owner is accountable for quality end products and speaks up - they will use their willpower as a tool to shape their environment instead of being a victim of circumstances.
 
