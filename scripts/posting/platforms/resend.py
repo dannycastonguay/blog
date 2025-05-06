@@ -11,6 +11,7 @@ from typing import Dict, Any, List, Optional, Literal
 from pathlib import Path
 from ..platforms import SocialMediaPlatform
 from ..email_subscribers import EmailSubscriberManager
+import time
 
 # Define content type literals
 ContentType = Literal["plain", "markdown", "html"]
@@ -154,25 +155,29 @@ class ResendPlatform(SocialMediaPlatform):
                 supabase_url = os.getenv("SUPABASE_URL", "")
                 if supabase_url:
                     # Convert from https://project-ref.supabase.co to https://project-ref.functions.supabase.co
-                    base_url = supabase_url.replace(".supabase.co", ".functions.supabase.co")
+                    base_url = supabase_url.replace(
+                        ".supabase.co", ".functions.supabase.co"
+                    )
                     base_url = f"{base_url}/email_subscriptions/unsubscribe"
-            
+
             # Send emails individually to each subscriber
             successful_sends = 0
             failed_sends = 0
-            
+
             print(f"Sending individual emails to {len(subscribers)} subscribers...")
-            
+
             for subscriber in subscribers:
                 subscriber_id = subscriber.get("id", "")
                 subscriber_email = subscriber.get("email", "")
                 blog_data["unsubscribe_url"] = f"{base_url}?id={subscriber_id}"
-                html_content = self._generate_html_email(page_name, content, content_type, blog_data)
+                html_content = self._generate_html_email(
+                    page_name, content, content_type, blog_data
+                )
 
                 if not subscriber_id or not subscriber_email:
                     print(f"Skipping subscriber with missing ID or email: {subscriber}")
                     continue
-                
+
                 try:
                     # Prepare email parameters for individual sending
                     params = {
@@ -182,23 +187,27 @@ class ResendPlatform(SocialMediaPlatform):
                         "html": html_content,
                         "text": content,
                     }
-                    
+
                     # Add attachments if any
                     if attachments:
                         params["attachments"] = attachments
-                    
+
                     # Send the email to the individual subscriber
                     print(f"Sending email to {subscriber_email}...")
                     response = resend.Emails.send(params)
-                    
+
                     # Check if send was successful
                     if response.get("id"):
                         print(f"✅ Successfully sent to {subscriber_email}")
                         successful_sends += 1
                     else:
-                        print(f"❌ Failed to send to {subscriber_email}: No ID returned")
+                        print(
+                            f"❌ Failed to send to {subscriber_email}: No ID returned"
+                        )
                         failed_sends += 1
-                        
+
+                    time.sleep(0.5)
+
                 except Exception as e:
                     print(f"❌ Error sending to {subscriber_email}: {str(e)}")
                     failed_sends += 1
@@ -222,7 +231,11 @@ class ResendPlatform(SocialMediaPlatform):
             return self.create_error_result(page_name, content, error_msg)
 
     def _generate_html_email(
-        self, title: str, content: str, content_type: ContentType = "plain" , blog_data: Optional[Dict[str, Any]] = None
+        self,
+        title: str,
+        content: str,
+        content_type: ContentType = "plain",
+        blog_data: Optional[Dict[str, Any]] = None,
     ) -> str:
         """
         Generate HTML email content using external template.
@@ -269,22 +282,22 @@ class ResendPlatform(SocialMediaPlatform):
 
         # Load the HTML template
         template_path = os.path.join("templates", "email", "blog_post.html")
-        
+
         # Get data from blog_data
         readable_title = blog_data["title"]
         publish_date = blog_data["publish_date"] or "2023-10-01"
         category = blog_data["category"]
         page_name_without_date = blog_data["page_name_without_date"]
         unsubscribe_url = blog_data["unsubscribe_url"]
-        
+
         # Construct post URL with category and page name without date
         base_url = os.getenv("BLOG_BASE_URL", "https://blog.dannycastonguay.com")
-        
+
         if category and category != "":
             post_url = f"{base_url}/{category.lower()}/{page_name_without_date}"
-        else : 
+        else:
             post_url = f"{base_url}/{page_name_without_date}"
-            
+
         try:
             with open(template_path, "r", encoding="utf-8") as f:
                 template = f.read()
@@ -294,8 +307,8 @@ class ResendPlatform(SocialMediaPlatform):
                 template.replace("{{title}}", readable_title)
                 .replace("{{content}}", formatted_content)
                 .replace("{{publish_date}}", publish_date)
-                .replace("{{post_url}}",post_url)
-                .replace("{{unsubscribe_url}}",unsubscribe_url)
+                .replace("{{post_url}}", post_url)
+                .replace("{{unsubscribe_url}}", unsubscribe_url)
             )
 
             return html
@@ -312,7 +325,7 @@ class ResendPlatform(SocialMediaPlatform):
             </body>
             </html>
             """
-        
+
     def get_subscribers(self) -> List[Dict[str, Any]]:
         """Get all active subscribers."""
         return self.subscriber_manager.get_active_subscribers()
@@ -320,27 +333,32 @@ class ResendPlatform(SocialMediaPlatform):
     def _extract_blog_post_data(self, page_name: str) -> Dict[str, Any]:
         """
         Extract data from the original blog post file.
-        
+
         Args:
             page_name: The name of the page (filename without extension)
-            
+
         Returns:
             Dict containing blog post data (title, category, publish_date, etc.)
         """
         import yaml
         import os
         from pathlib import Path
-        
+
         # Initialize default data
         data = {
             "title": page_name.replace("-", " ").title(),
             "category": "",
             "publish_date": "",
-            "page_name_without_date": page_name
+            "page_name_without_date": page_name,
         }
-        
+
         # Extract date from page_name if it has a date prefix (YYYY-MM-DD-)
-        if len(page_name) > 11 and page_name[4] == '-' and page_name[7] == '-' and page_name[10] == '-':
+        if (
+            len(page_name) > 11
+            and page_name[4] == "-"
+            and page_name[7] == "-"
+            and page_name[10] == "-"
+        ):
             data["publish_date"] = page_name[:10]  # Extract YYYY-MM-DD
             data["page_name_without_date"] = page_name[11:]  # Remove date prefix
             data["title"] = data["page_name_without_date"].replace("-", " ").title()
@@ -349,41 +367,41 @@ class ResendPlatform(SocialMediaPlatform):
         posts_dir = "_posts"
         possible_filenames = [
             f"{posts_dir}/{page_name}.md",  # Try exact match first
-            f"{posts_dir}/{data['publish_date']}-{data['page_name_without_date']}.md"  # Try with date prefix
+            f"{posts_dir}/{data['publish_date']}-{data['page_name_without_date']}.md",  # Try with date prefix
         ]
-        
+
         blog_file_path = None
         for filename in possible_filenames:
             if os.path.exists(filename):
                 blog_file_path = filename
                 break
-        
+
         if not blog_file_path:
             print(f"WARNING: Could not find original blog post file for {page_name}")
             return data
-        
+
         # Read the blog post file
         try:
-            with open(blog_file_path, 'r', encoding='utf-8') as f:
+            with open(blog_file_path, "r", encoding="utf-8") as f:
                 content = f.read()
-            
+
             # Extract front matter
-            parts = content.split('---', 2)
+            parts = content.split("---", 2)
             if len(parts) >= 3:
                 front_matter = yaml.safe_load(parts[1])
-                
+
                 # Extract data from front matter
                 if front_matter:
                     # Get title from front matter
-                    if 'title' in front_matter:
-                        data["title"] = front_matter['title']
-                    
+                    if "title" in front_matter:
+                        data["title"] = front_matter["title"]
+
                     # Get category from front matter - only use 'category' field
-                    if 'category' in front_matter:
-                        data["category"] = front_matter['category']
-            
+                    if "category" in front_matter:
+                        data["category"] = front_matter["category"]
+
             return data
-            
+
         except Exception as e:
             print(f"ERROR: Failed to extract blog post data: {str(e)}")
             return data
