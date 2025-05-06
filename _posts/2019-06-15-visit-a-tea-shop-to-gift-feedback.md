@@ -4,14 +4,15 @@ category: "Team health"
 tag: [Feedback]
 toc: true
 ---
-        
+
 Giving good feedback to people around you (both at work and in your private life) can be an excellent time investment. If the people around you become stronger, you will benefit. I want to help you achieve that by giving you two things: 1) a template that I learned as a consultant, and 2) a memorable list of desirable traits to think about when coming up with feedback.
 
 <span><audio id="myAudio" controls>
-    <source src="/assets/audio/gifting-feedback.ogg" type="audio/ogg">
-    <source src="/assets/audio/gifting-feedback.mp3" type="audio/mpeg">
-  </audio>
-  <button class="btn btn--small" id="video-player-playback-rate-control" style="border-color=none !important;border-collapse: separate !important;">Speed: <span id="current-rate">1</span>x</button></span>
+
+<source src="/assets/audio/gifting-feedback.ogg" type="audio/ogg">
+<source src="/assets/audio/gifting-feedback.mp3" type="audio/mpeg">
+</audio>
+<button class="btn btn--small" id="video-player-playback-rate-control" style="border-color=none !important;border-collapse: separate !important;">Speed: <span id="current-rate">1</span>x</button></span>
 
 # How to give and receive feedback
 
@@ -29,15 +30,15 @@ Here's a few of the important points:
 
 An effective way to prepare giving someone feedback is to write it down using the following template:
 
-> 1. I observed _______________.
-> 2. It made me feel _______________.
-> 3. One idea to improve is _______________.
+> 1. I observed **\*\***\_\_\_**\*\***.
+> 2. It made me feel **\*\***\_\_\_**\*\***.
+> 3. One idea to improve is **\*\***\_\_\_**\*\***.
 
 This template is easy to remember and can be used with anyone. It also forces you to be fact-based, and prevents you from giving labels. For instance, you could say:
 
-> 1. *I observed that* you arrived 10 minutes late to our meeting on Wednesday. And it wasn't the first time.
-> 2. *It made me feel* that my time is less valuable than yours.
-> 3. *One idea to improve is* to add buffer between your meetings when you know that you are likely to run-over.
+> 1. _I observed that_ you arrived 10 minutes late to our meeting on Wednesday. And it wasn't the first time.
+> 2. _It made me feel_ that my time is less valuable than yours.
+> 3. _One idea to improve is_ to add buffer between your meetings when you know that you are likely to run-over.
 
 # Foundational skill framework
 
@@ -79,7 +80,7 @@ A **Pioneer** takes responsibility and acts with courage - they will take risks,
 
 A **Student** embraces feedback with a growth mindset - they are open minded about being able to learn anything, and believe that hard work over time pays off more than initial talent.
 
-------------
+---
 
 # Putting it together
 
@@ -87,12 +88,13 @@ A **Student** embraces feedback with a growth mindset - they are open minded abo
 
 For example, a real (sanitized) feedback I have given to someone I reported to once was:
 
-> *I have observed that you have selected the most optimistic scenarios to present to the senior client, and have excluded the more conservative ones. I heard you state the importance to show encouraging results, and I too want to build momentum with the client. However, I find this situation uncomfortable for two reasons: 1) the team has used the words "selection bias" and have confidentially voiced concerns about not being fairly represented, 2) I'm afraid that we may condition our client to expect inflated results, and lose their trust a little. One idea to improve this would be to write down on the page that these are the most optimistic scenarios, and add the rest of the scenarios in the appendix.*
+> _I have observed that you have selected the most optimistic scenarios to present to the senior client, and have excluded the more conservative ones. I heard you state the importance to show encouraging results, and I too want to build momentum with the client. However, I find this situation uncomfortable for two reasons: 1) the team has used the words "selection bias" and have confidentially voiced concerns about not being fairly represented, 2) I'm afraid that we may condition our client to expect inflated results, and lose their trust a little. One idea to improve this would be to write down on the page that these are the most optimistic scenarios, and add the rest of the scenarios in the appendix._
 
 Effectively, I was reminding my boss to be a **scientist**, and I was myself exhibiting both the **teacher** and the **owner** traits. I hope you find this useful, please don't hesitate to give me feedback.
 
+
 ## Further related reading and videos I found inspiring
 
-+ Carol Dweck's [Growth Mindset book](https://amzn.to/2XiNqBB)
-+ Adam Grant's [Give and Take book](https://amzn.to/2IN1Xwg) and [Originals book](https://amzn.to/2Knp7wq)
-+ Ray Dalio's [Princples](https://amzn.to/2XhS17a) and his [iOS app](https://www.principles.com/principles-in-action/)
+- Carol Dweck's [Growth Mindset book](https://amzn.to/2XiNqBB)
+- Adam Grant's [Give and Take book](https://amzn.to/2IN1Xwg) and [Originals book](https://amzn.to/2Knp7wq)
+- Ray Dalio's [Princples](https://amzn.to/2XhS17a) and his [iOS app](https://www.principles.com/principles-in-action/)
