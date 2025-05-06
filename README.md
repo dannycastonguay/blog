@@ -193,7 +193,21 @@ After a PR with social media content is merged:
 2. Check the comments section to see posting results
 3. Results include status, post URL, and any errors
 
-## 🔌 Adding a New Platform Integration
+## 🔌 Platform Integrations
+
+### Email Newsletter with Resend and Supabase
+
+The system includes an email newsletter integration that sends blog posts to subscribers using Resend for email delivery and Supabase for subscriber management. For detailed setup and usage instructions, see [Email Subscription System](docs/subscription_system.md).
+
+Key features:
+
+- Automated email sending to subscribers when new blog posts are published
+- Personalized unsubscribe links for each subscriber
+- Responsive HTML email template with customization options
+- Support for Markdown, plain text, and HTML content
+- Subscriber management through Supabase
+
+### Adding a New Social Media Platform
 
 To add support for a new social media platform:
 
@@ -230,6 +244,7 @@ To add support for a new social media platform:
    supported_platforms = {
        "X": TwitterPlatform,
        "LinkedIn": LinkedInPlatform,
+       "Resend": ResendPlatform,
    }
    ```
 
