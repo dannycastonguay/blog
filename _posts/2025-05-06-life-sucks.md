@@ -16,4 +16,4 @@ If I’ve had a great day at work and things are going smoothly, maybe I’ll do
 
 Over time, this habit has made me more resistant to pain. I’m now able to take on greater challenges, both physical and mental, and offer more help to the people around me.
 
-And I believe this resilience is contagious. While I don’t have hard data to prove it, I feel incredibly fortunate to be surrounded by hardworking, resilient people who can endure plenty of pain and still keep fighting another day.
+And I believe this resilience is contagious. While I don’t have hard data to prove it, I feel incredibly fortunate to be surrounded by hardworking, resilient people who can endure plenty of pain and still keep fighting another day. 
