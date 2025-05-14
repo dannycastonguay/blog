@@ -44,15 +44,15 @@ First number is share of employment. The three lift columns give the assumed pro
 
 Multiply share by lift then add across rows and you get
 
-• about 2% of labor hours saved in the coder-only world
-• about 17% saved in the moderate world
-• about 60% saved in the full optimist world
+- about 2% of labor hours saved in the coder-only world
+- about 17% saved in the moderate world
+- about 60% saved in the full optimist world
 
 Divide each figure by a rollout lag. Seven years for the moderate world and five years for the full optimist world are reasonable guesses.
 
-• coder-only world adds roughly 0.2% to yearly growth
-• moderate world adds roughly 2.5%
-• full optimist world adds more than 10%
+- coder-only world adds roughly 0.2% to yearly growth
+- moderate world adds roughly 2.5%
+- full optimist world adds more than 10%
 
 Jack’s 3 to 5% path is the moderate world. It needs three beliefs:
 
