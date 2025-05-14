@@ -1,0 +1,29 @@
+**Title: Could AI Boost U.S. Economic Growth to 3-5% Annually? Insights from a Recent Interview with Jack Clark of Anthropic**
+
+In a recent interview on Tyler Cowen's podcast, Jack Clark, co-founder of Anthropic, discussed the potential impact of AI on U.S. economic growth. While some techno optimists predict growth rates between 20-30%, Clark suggests a more modest 3-5%. Let's explore the assumptions behind these projections.
+
+### Key Points:
+
+- **AI's Impact on Economic Growth**
+  - Jack Clark estimates AI might raise U.S. economic growth to about 3-5% annually, contrasting with more optimistic figures.
+  - The discussion centers on what assumptions are needed to believe in each scenario.
+
+- **Anthropic's Economic Index Insights**
+  - In a recent paper, Anthropic highlights:
+    - > "79% of conversations on Claude Code are classified as automation rather than human-in-the-loop help."
+    - *60% of the code is front-end web work, such as JavaScript and HTML.*
+    - *33% of all sessions come from startups; large enterprises only account for 25%.*
+
+- **Programmers and National Output**
+  - Programmers comprise about 3% of the U.S. labor force.
+  - Even a 50% increase in programmer efficiency equates to only a 1.5% jump in national output, or roughly 0.2% extra growth per year.
+
+- **Service Sector Productivity Potential**
+  - A simple partition of job groups shows different productivity lift assumptions over ten years:
+    - Coders: 50% lift
+    - Office jobs: 0-60% lift
+    - Education: 0-50% lift
+    - Other sectors like health, transport, food, etc., show potential lifts from 0-30%.
+
+- **Growth Scenarios**
+  - Coder-only world adds roughly 0.2%
