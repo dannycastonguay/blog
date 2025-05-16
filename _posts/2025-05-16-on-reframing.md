@@ -28,13 +28,11 @@ Something you might like even more.
 
 --- 
 
-Related concepts in cognitive behavioral therapy include cognitive defusion and cognitive restructuring.  
+Related concepts in cognitive behavioral therapy include *cognitive defusion* and *cognitive restructuring*.  
 Cognitive defusion is about seeing thoughts as just thoughts.  
 Cognitive restructuring is about reframing beliefs and patterns.  
-You can read more about cognitive defusion and cognitive restructuring.  
 
-In mindfulness-based approaches, related concepts are non-attachment and letting go of clinging, which involve releasing rigid desires and opening up to the present moment.  
-You can read more about non-attachment and clinging.  
+In mindfulness-based approaches, related concepts are *non-attachment* and *letting go of clinging*, which involve releasing rigid desires and opening up to the present moment.  
 
 ---
 
