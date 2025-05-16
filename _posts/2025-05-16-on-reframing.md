@@ -2,8 +2,8 @@
 title: On Reframing
 ---
 
-Sometimes You Have to Let Go of What You Want...  
-To Discover Something Even Better  
+Sometimes you have to let go of what you want...  
+To discover something even better.
 
 Our brains are wired to plan.  
 We set goals and chase them.  
