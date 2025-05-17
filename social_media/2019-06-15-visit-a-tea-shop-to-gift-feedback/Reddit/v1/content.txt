@@ -1,0 +1,33 @@
+**Title:** How to Give Effective Feedback: A Template and Framework
+
+I've been exploring ways to give meaningful feedback, both at work and in personal life, and found a useful method that might interest you. Here's a breakdown of a feedback template and a framework for considering strengths.
+
+**Key Points:**
+
+- **Feedback Principles:**
+  - Feedback can be given to anyone, from colleagues to family.
+  - It should be delivered verbally first and requires preparation.
+  - Good feedback is *strength-based*, *fact-based*, and *empathetic*.
+  - Receiving feedback is a gift, offering opportunities for improvement.
+  - Feedback should be timely and scheduled regularly.
+
+- **Feedback Preparation Template:**
+  > 1. I observed **\_\_\_**.
+  > 2. It made me feel **\_\_\_**.
+  > 3. One idea to improve is **\_\_\_**.
+
+  This template encourages specificity and avoids labeling, keeping feedback constructive.
+
+- **"A TEA SHOPS" Strength Framework:**
+  - **A**thlete: Prioritizes health and balance.
+  - **T**eacher: Empathically mentors others.
+  - **E**ngineer: Provides pragmatic solutions.
+  - **A**rtist: Thinks creatively and innovates.
+  - **S**cientist: Bases decisions on data.
+  - **H**uman: Is authentic and approachable.
+  - **O**wner: Takes responsibility for outcomes.
+  - **P**ioneer: Embraces risk and innovation.
+  - **S**tudent: Welcomes feedback for growth.
+
+**Example of Feedback in Action:**
+> _"I observed that you have selected the most optimistic scenarios to present to the senior client, and have excluded the more conservative ones. It made me feel uncomfortable because it could lead to unrealistic expectations. One idea to improve is to include a note about the scenario optimism and add other
