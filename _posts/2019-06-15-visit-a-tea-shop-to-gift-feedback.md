@@ -92,7 +92,6 @@ For example, a real (sanitized) feedback I have given to someone I reported to o
 
 Effectively, I was reminding my boss to be a **scientist**, and I was myself exhibiting both the **teacher** and the **owner** traits. I hope you find this useful, please don't hesitate to give me feedback.
 
-
 ## Further related reading and videos I found inspiring
 
 - Carol Dweck's [Growth Mindset book](https://amzn.to/2XiNqBB)
