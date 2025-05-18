@@ -4,4 +4,7 @@ To run locally, please consult Github's help page.
 
 Once you are done, just run with:
 
-bundle exec jekyll serve.
+```
+  bundle exec jekyll serve.
+```
+
