@@ -1,0 +1,31 @@
+**Title: How I Write Proposals Using AI: A Step-by-Step Guide**
+
+In a world where AI is becoming increasingly integrated into business processes, writing proposals has also evolved. At [bld.ai](https://bld.ai), our AI agent can assist in crafting proposals, yet I still find myself frequently asked to write them. Here's a breakdown of my approach to proposal writing and how AI plays a pivotal role.
+
+**My Proposal Writing Algorithm:**
+
+1. **Pre-Meeting Preparation:**
+   - Before meeting potential clients, I explore their website and test their product.
+   - I document detailed feedback, sometimes recording my experience using tools like [Descript](https://descript.com).
+   - > "Spending 15-60 minutes gives a solid understanding of the problems their app, website, or business faces."
+
+2. **Drafting with AI:**
+   - I use an AI agent (like ChatGPT 4.5 or bld.ai’s agent) to draft a hypothesis on how we could assist the client.
+   - This draft leverages both our skills and the resources available through bld.ai.
+
+3. **Initial Asynchronous Communication:**
+   - Early communication is asynchronous, sharing feedback and draft proposals to gauge client interest.
+
+4. **Recording the Call:**
+   - During calls, I take notes and record the conversation using tools like Google Gemini.
+   - Transcripts are then fed back into the AI for refining the proposal.
+
+5. **Analyzing and Iterating:**
+   - The AI helps structure the final proposal by outlining the situation, complications, resolutions, and potential solutions.
+
+**The Mindset Behind Writing Proposals:**
+
+- Proposal writing is not just about mechanics; it's about understanding and challenging the business model.
+- Avoid being a "task monkey" and instead focus on providing genuine value.
+- Authenticity in writing transforms a task into an opportunity to express your thoughts clearly and truthfully.
+- > "Clear, direct,
