@@ -28,7 +28,7 @@ My best writings were often shorter than required because authenticity doesn’t
 
 ## Writing style
 
-Many in consulting hide behind ambiguous PowerPoint slides, avoiding clarity. I prefer simple, clear, honest writing—an email often holds more genuine power than a polished PowerPoint because it communicates ideas unambiguously.
+Many in consulting hide behind ambiguous PowerPoint slides, avoiding clarity. I prefer simple, clear, and honest writing. An thoughful email often holds more genuine power than a polished PowerPoint because it communicates ideas unambiguously.
 
 At bld.ai, proposal writing is straightforward: start by honestly saying what you think. There’s no right or wrong answer, only authenticity. Clients appreciate truthful dialogue because it fosters genuine collaboration and clear understanding.
 
