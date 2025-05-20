@@ -1,0 +1,32 @@
+**Title: How I Write Proposals Using AI and Authenticity**
+
+In a world where AI is making its mark, writing effective proposals can still feel like a daunting task. However, leveraging AI tools and a genuine communication style can transform this process. Here's how I approach writing proposals:
+
+### Key Points on Proposal Writing
+
+- **Utilizing AI Tools**: Platforms like [bld.ai](https://bld.ai) offer AI agents capable of drafting proposals. These tools can be a significant time-saver and help maintain quality.
+  
+- **Preparation is Key**:
+  - **Pre-Meeting Research**: Before any client meeting, I delve into their website and product, taking detailed notes on potential areas of improvement. Tools like [Descript](https://descript.com) are invaluable for recording insights.
+  
+- **Drafting with AI**: Using AI agents like ChatGPT or bld.ai, I draft initial proposals based on our strengths and available resources.
+  
+- **Efficient Communication**:
+  - **Asynchronous Interaction**: Sharing feedback and draft proposals early in the process often piques client interest and accelerates progress.
+  
+- **Recording and Analyzing Calls**: I record discussions and utilize transcription tools like Google Gemini to refine proposals post-meeting.
+  
+- **Iterative Refinement**: Feeding call transcripts back into the AI helps in structuring a comprehensive proposal, focusing on solutions, pricing, and service providers.
+
+### Proposal Writing Mindset
+
+- **Understanding Over Task Completion**: Rather than just fulfilling requests, challenge and understand the business model to add genuine value.
+  
+- **Authenticity is Key**: Reflect on your thoughts truthfully. Authentic writing often needs fewer words and is more impactful than verbose, ambiguous content.
+
+- **Simple and Clear Communication**: A straightforward email can sometimes be more effective than a polished presentation.
+
+### Discussion Questions
+
+1. How do you balance AI assistance with personal input to maintain authenticity in your proposals?
+2
