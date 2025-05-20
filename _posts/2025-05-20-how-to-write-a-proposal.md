@@ -13,7 +13,7 @@ But perhaps when people ask, “How do you write proposals and sell so well?” 
 1. **Pre-Meeting Preparation**: When an introduction is made via WhatsApp, Gmail, or through our website, I immediately visit their website, test their product, and note down detailed negative feedback. Even better, I record myself using [Descript](https://descript.com/). Spending 15-60 minutes gives a solid understanding of the problems their app, website, or business faces.
 2.	**Draft Proposal with AI**: I then use an AI agent (like ChatGPT 4.5 or bld.ai’s agent) to draft a hypothesis of how we could help the potential client based on our skills and the service providers available on bld.ai.
 3.	**Initial Asynchronous Communication**: I prefer early-stage asynchronous communication as it is quicker and more efficient. Sharing detailed negative feedback and the draft proposal early usually results in eager interest from the client.
-4.	**Recording the Call**: During the actual call, I actively take notes and ensure the conversation is recorded. Tools like Google Gemini or granola.ai help by transcribing and summarizing discussions.
+4.	**Recording the Call**: During the actual call, I actively take notes and ensure the conversation is recorded. Tools like Google Gemini or [granola.ai](https://www.granola.ai/) help by transcribing and summarizing discussions.
 5.	**Analyzing and Iterating**: After the call, I feed the transcript back into the AI agent, which helps structure the proposal, including situation, complication, resolution, milestones, hourly rate calculations, and identifying solutions or providers from the bld.ai network.
 
 ## My proposal writing mindset
