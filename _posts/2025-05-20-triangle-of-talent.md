@@ -16,24 +16,24 @@ Feel free to view the video using the link below and let me know your thoughts!
 
 Once upon a time, there was a little boy named Milo. At first, Milo struggled with even simple tasks. When asked to build a tower of blocks, he felt confused and unsure (Level 1 – Useless). But Milo did not give up.
 
-![Useless Milo](/assets/img/2025-05-20-triangle-of-talent/5.svg)
+![Useless Milo](/assets/img/2025-05-20-triangle-of-talent/5.jpg)
 
 As he grew a bit older, Milo learned to follow clear instructions. His mom would tell him exactly how to stack the blocks, step by step, and he could build a tower just as she described (Level 2 – Task Monkey).
 
-![Useless Milo](/assets/img/2025-05-20-triangle-of-talent/4.svg)
+![Useless Milo](/assets/img/2025-05-20-triangle-of-talent/4.jpg)
 
 Soon, Milo discovered he could do even better! When given a puzzle, he figured out how to solve it by himself, though someone had to tell him which puzzle to solve first (Level 3 – Problem Solver).
 
-![Useless Milo](/assets/img/2025-05-20-triangle-of-talent/3.svg)
+![Useless Milo](/assets/img/2025-05-20-triangle-of-talent/3.jpg)
 
 One day, Milo realized he could help his friends solve puzzles too. He created a plan for them to work together, making sure everyone knew their job. Together, they solved puzzles faster and had more fun (Level 4 – Systems Thinker).
 
-![Useless Milo](/assets/img/2025-05-20-triangle-of-talent/2.svg)
+![Useless Milo](/assets/img/2025-05-20-triangle-of-talent/2.jpg)
 
 Finally, Milo became amazing at choosing the best puzzles to solve—the ones that mattered most. He could quickly spot problems, gather his friends, and solve them easily. Milo became a superstar! (Level 5 – Superstar).
 
-![Useless Milo](/assets/img/2025-05-20-triangle-of-talent/1.svg)
+![Useless Milo](/assets/img/2025-05-20-triangle-of-talent/1.jpg)
 
 This story is important because people who can find the right problems and solve them are the most valuable. That’s why leaders, like CEOs of companies, look for superstars like Milo. Having people who grow and learn like Milo helps their teams do great things and makes their companies successful.
 
-![Useless Milo](/assets/img/2025-05-20-triangle-of-talent/6.svg)
+![Useless Milo](/assets/img/2025-05-20-triangle-of-talent/6.jpg)
