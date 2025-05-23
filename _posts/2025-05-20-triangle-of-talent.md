@@ -2,7 +2,7 @@
 title: Triangle of Talent Illustrated
 ---
 
-Gary Tan, president of Y Combinator, recently shared Shaan Puri’s "[Triangle of Talent](https://www.shaanpuri.com/essays/triangle-of-talent)" on [X](https://x.com/garrytan/status/1888067926588276837).. Shaan describes the Triangle as an essential framework that significantly improved his approach to management, encapsulating a simple but impactful insight: every employee is fundamentally a problem solver, and the most valuable employees are those who consistently identify and address the most critical problems.
+Gary Tan, president of Y Combinator, recently shared Shaan Puri’s "[Triangle of Talent](https://www.shaanpuri.com/essays/triangle-of-talent)" on [X](https://x.com/garrytan/status/1888067926588276837). Shaan describes the Triangle as an essential framework that significantly improved his approach to management, encapsulating a simple but impactful insight: every employee is fundamentally a problem solver, and the most valuable employees are those who consistently identify and address the most critical problems.
 
 The illustration itself is powerful precisely because of its simplicity, it feels almost like an engineering diagram, cutting straight to the heart of a fundamental managerial truth.
 
