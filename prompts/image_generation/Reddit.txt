@@ -1,0 +1,37 @@
+# Reddit Image Generation Prompt
+
+## Platform-Specific Guidelines for Reddit
+- Community-focused content that fits subreddit cultures
+- Authentic, genuine visuals that don't feel overly promotional
+- Horizontal (16:9) or square (1:1) formats work well
+- Educational and informative content is highly valued
+- Images should support discussion and community engagement
+- Emphasis on providing real value rather than marketing
+
+## Reddit-Specific Visual Style
+- Clean, informative designs with educational focus
+- Authentic, non-promotional aesthetic
+- Clear, readable graphics that support learning
+- Infographic-style visuals work well
+- Emphasis on substance over style
+- Community-friendly and discussion-worthy content
+- Professional but approachable design
+
+## Content Adaptation for Reddit
+When creating image prompts for Reddit, emphasize:
+1. **Educational Value**: Focus on teaching and informing
+2. **Community Relevance**: Content that fits specific subreddit interests
+3. **Authentic Presentation**: Genuine, non-promotional approach
+4. **Discussion Starter**: Visuals that encourage comments and engagement
+5. **Informative Design**: Clear, educational graphics and layouts
+6. **Value-First**: Prioritize usefulness over marketing appeal
+7. **Respectful Tone**: Content that respects community guidelines and culture
+
+## Reddit Image Prompt Enhancement
+Add these elements to the base prompt:
+- "Educational, informative design suitable for Reddit community discussions"
+- "Authentic, non-promotional aesthetic that provides genuine value"
+- "Clear, readable graphics that support learning and understanding"
+- "Community-friendly design that encourages discussion and engagement"
+- "Infographic-style layout with emphasis on substance and information"
+- "Professional but approachable visual style that respects Reddit culture"

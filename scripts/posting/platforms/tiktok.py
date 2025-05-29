@@ -28,10 +28,10 @@ class TikTokPlatform(SocialMediaPlatform):
 
     def find_media_files(self, platform_folder: str) -> Dict[str, List[str]]:
         """
-        Find video files in the platform folder.
+        Find video files in the media folder within the version directory.
 
         Args:
-            platform_folder: Path to the platform folder
+            platform_folder: Path to the platform folder (version directory)
 
         Returns:
             Dict containing lists of video files
@@ -51,21 +51,14 @@ class TikTokPlatform(SocialMediaPlatform):
         videos = []
         audio_files = []
 
-        # Find files in current folder
-        for ext in video_extensions:
-            videos.extend(glob.glob(os.path.join(folder, f"*.{ext}")))
-
-        for ext in audio_extensions:
-            audio_files.extend(glob.glob(os.path.join(folder, f"*.{ext}")))
-
-        # Check parent folder if in version folder
-        parent_folder = Path(folder).parent
-        if Path(folder).name.startswith("v") and parent_folder.exists():
+        # Look for media files in the media/ subfolder within the version directory
+        media_folder = os.path.join(folder, "media")
+        if os.path.exists(media_folder) and os.path.isdir(media_folder):
             for ext in video_extensions:
-                videos.extend(glob.glob(os.path.join(parent_folder, f"*.{ext}")))
+                videos.extend(glob.glob(os.path.join(media_folder, f"*.{ext}")))
 
             for ext in audio_extensions:
-                audio_files.extend(glob.glob(os.path.join(parent_folder, f"*.{ext}")))
+                audio_files.extend(glob.glob(os.path.join(media_folder, f"*.{ext}")))
 
         return {"videos": videos, "audio": audio_files}
 

@@ -1,0 +1,37 @@
+# TikTok Image Generation Prompt
+
+## Platform-Specific Guidelines for TikTok
+- Vertical (9:16) aspect ratio optimized for mobile viewing
+- Bold, dynamic, and attention-grabbing visuals
+- Bright, vibrant colors that stand out on mobile screens
+- Youth-oriented and trend-conscious aesthetic
+- Focus on entertainment, education, and viral potential
+- Images should feel fresh, current, and engaging for Gen Z and Millennial audiences
+
+## TikTok-Specific Visual Style
+- Bold, colorful, and energetic designs
+- Modern, trendy aesthetic with pop culture influences
+- High contrast and vibrant color palettes
+- Dynamic compositions that suggest movement or action
+- Fun, approachable, and slightly playful tone
+- Mobile-first design with large, clear visual elements
+- Emphasis on creativity and visual storytelling
+
+## Content Adaptation for TikTok
+When creating image prompts for TikTok, emphasize:
+1. **Mobile Optimization**: Vertical format designed for phone screens
+2. **Attention-Grabbing**: Visuals that stop the scroll immediately
+3. **Trend Awareness**: Modern, current aesthetic that feels fresh
+4. **Educational Entertainment**: Learning content presented in an engaging way
+5. **Viral Potential**: Shareable, memorable visual content
+6. **Youth Appeal**: Resonates with younger, digitally-native audiences
+7. **Quick Consumption**: Clear messaging for fast-paced viewing
+
+## TikTok Image Prompt Enhancement
+Add these elements to the base prompt:
+- "Vertical mobile-optimized design with bold, vibrant colors"
+- "Modern, trendy aesthetic suitable for Gen Z and Millennial audiences"
+- "High-energy, attention-grabbing visual that stops the scroll"
+- "Educational content presented in an entertaining, engaging format"
+- "Dynamic composition with clear, large visual elements for mobile viewing"
+- "Fresh, current design that feels viral and shareable"

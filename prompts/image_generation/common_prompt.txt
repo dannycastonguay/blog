@@ -1,0 +1,56 @@
+# Image Generation Prompt System
+
+## Purpose
+This prompt system creates compelling visual prompts for blog post content that will be used to generate images for social media posts.
+
+## Inputs Expected
+1. **Full Blog Post Content**: The complete markdown content from the _posts/ directory
+2. **Social Media Content**: The platform-specific content from content.txt (subject line, summary, key points)
+3. **Image Generation Guidelines**: This prompt file with style and quality guidelines
+
+## Output Expected
+A detailed **media_prompt** that combines insights from all three inputs to create a specific image generation prompt that:
+- Captures the essence and main themes of the full blog post
+- Aligns with the social media content's messaging
+- Follows professional visual guidelines
+- Results in real, valuable images that describe the post's aim
+
+## Guidelines for Creating Image Prompts
+
+### Visual Quality Standards
+1. Create visually appealing and professional images suitable for social media
+2. Focus on real, concrete visual representations that clearly communicate the post's value
+3. Use modern, clean, and engaging visual styles that look authentic and professional
+4. Consider the emotional tone and key themes of the content
+5. Avoid generic abstract concepts - create specific, meaningful visuals
+6. Use vibrant but professional color schemes
+7. Create images that would work well as thumbnails or social media posts
+
+### Style Preferences
+- Modern flat design or minimalist illustrations with real-world elements
+- Professional business aesthetics that feel authentic
+- Clean backgrounds with focused, meaningful subjects
+- High contrast and good readability when used as thumbnails
+- Suitable for both light and dark social media themes
+- Real objects, scenarios, or concepts that viewers can immediately understand
+
+### Content Integration Requirements
+When creating the media_prompt, you must:
+1. **Extract core concepts** from the full blog post content
+2. **Identify key messaging** from the social media content
+3. **Combine both** to create a visual that represents the post's actual value and purpose
+4. **Ensure the image describes the aim** of the post clearly and professionally
+5. **Make it valuable** - the image should help viewers understand what they'll gain
+
+## Media Prompt Format
+Create detailed image generation prompts using this structure:
+
+"A professional, realistic [main visual concept from blog post] showing [specific elements that represent the key value/learning from the post] with [relevant objects, settings, or scenarios from the content]. Include [specific visual elements that represent the main frameworks, tools, or concepts discussed]. Use [appropriate color scheme] with clean, modern design. The image should clearly communicate [the main benefit/value proposition from the social media content] in a way that looks authentic and valuable for social media."
+
+## Example Analysis Process
+1. **From Full Post**: Extract main frameworks, tools, concepts, and learning outcomes
+2. **From Social Media Content**: Identify the key value proposition and call-to-action
+3. **Combine**: Create a visual that shows the practical application or benefit of the post's content
+4. **Ensure Realism**: Make sure the image represents something concrete and valuable, not abstract
+
+The final media_prompt should result in images that immediately communicate the post's value and make viewers want to engage with the content.

@@ -1,0 +1,32 @@
+# X (Twitter) Image Generation Prompt
+
+## Platform-Specific Guidelines for X
+- Images should be optimized for Twitter's timeline display (16:9 or 1:1 aspect ratio works best)
+- High contrast and bold visuals that stand out in a fast-scrolling feed
+- Text overlays should be minimal but impactful when used
+- Focus on eye-catching, shareable visuals that encourage engagement
+- Consider Twitter's audience: professionals, thought leaders, and engaged communities
+- Images should work well both as standalone posts and as part of threads
+
+## X-Specific Visual Style
+- Bold, attention-grabbing designs that stop the scroll
+- Professional but approachable aesthetic
+- Clear focal points that work well in small thumbnail sizes
+- Colors that pop against Twitter's interface (white/dark backgrounds)
+- Modern, tech-savvy visual language
+- Emphasis on clarity and immediate visual impact
+
+## Content Adaptation for X
+When creating image prompts for X, emphasize:
+1. **Immediate Impact**: The image should communicate value within seconds
+2. **Professional Authority**: Visuals that establish credibility and expertise
+3. **Shareability**: Designs that people want to retweet and share
+4. **Thread-Friendly**: Images that work well in a series or standalone
+5. **Mobile-First**: Optimized for mobile viewing where most X consumption happens
+
+## X Image Prompt Enhancement
+Add these elements to the base prompt:
+- "Optimized for Twitter timeline display with high contrast and bold visual elements"
+- "Professional, shareable design that stands out in a social media feed"
+- "Clean, modern aesthetic suitable for thought leaders and professional audiences"
+- "Mobile-optimized with clear focal points that work in thumbnail size"

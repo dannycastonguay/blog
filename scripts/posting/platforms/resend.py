@@ -7,6 +7,7 @@ import glob
 import json
 import resend
 import markdown
+import base64
 from typing import Dict, Any, List, Optional, Literal
 from pathlib import Path
 from ..platforms import SocialMediaPlatform
@@ -36,10 +37,10 @@ class ResendPlatform(SocialMediaPlatform):
 
     def find_media_files(self, platform_folder: str) -> List[str]:
         """
-        Find media files in the platform folder.
+        Find media files in the media folder within the version directory.
 
         Args:
-            platform_folder: Path to the platform folder
+            platform_folder: Path to the platform folder (version directory)
 
         Returns:
             List of media file paths
@@ -55,15 +56,11 @@ class ResendPlatform(SocialMediaPlatform):
 
         media_files = []
 
-        # Find files in current folder
-        for ext in image_extensions:
-            media_files.extend(glob.glob(os.path.join(folder, f"*.{ext}")))
-
-        # Check parent folder if in version folder
-        parent_folder = Path(folder).parent
-        if Path(folder).name.startswith("v") and parent_folder.exists():
+        # Look for media files in the media/ subfolder within the version directory
+        media_folder = os.path.join(folder, "media")
+        if os.path.exists(media_folder) and os.path.isdir(media_folder):
             for ext in image_extensions:
-                media_files.extend(glob.glob(os.path.join(parent_folder, f"*.{ext}")))
+                media_files.extend(glob.glob(os.path.join(media_folder, f"*.{ext}")))
 
         return media_files
 
@@ -128,10 +125,25 @@ class ResendPlatform(SocialMediaPlatform):
                 try:
                     with open(media_file, "rb") as f:
                         file_content = f.read()
+                        # Encode file content as base64 string
+                        file_content_b64 = base64.b64encode(file_content).decode('utf-8')
                         filename = os.path.basename(media_file)
-                        attachments.append(
-                            {"content": file_content, "filename": filename}
-                        )
+                        
+                        # Determine MIME type based on file extension
+                        file_ext = os.path.splitext(filename)[1].lower()
+                        mime_type_map = {
+                            '.jpg': 'image/jpeg',
+                            '.jpeg': 'image/jpeg',
+                            '.png': 'image/png',
+                            '.gif': 'image/gif'
+                        }
+                        content_type = mime_type_map.get(file_ext, 'application/octet-stream')
+                        
+                        attachments.append({
+                            "content": file_content_b64,
+                            "filename": filename,
+                            "type": content_type
+                        })
                 except Exception as e:
                     print(f"Error reading media file {media_file}: {str(e)}")
 
@@ -205,7 +217,6 @@ class ResendPlatform(SocialMediaPlatform):
                             f"❌ Failed to send to {subscriber_email}: No ID returned"
                         )
                         failed_sends += 1
-
                     time.sleep(0.5)
 
                 except Exception as e:

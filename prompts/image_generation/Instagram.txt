@@ -1,0 +1,35 @@
+# Instagram Image Generation Prompt
+
+## Platform-Specific Guidelines for Instagram
+- Square (1:1) or vertical (4:5) aspect ratios work best for feed posts
+- Highly visual, aesthetic-focused content that fits Instagram's visual culture
+- Bright, vibrant colors and high-quality, polished visuals
+- Consider Instagram Stories format (9:16) for story-specific content
+- Focus on lifestyle, inspiration, and visually appealing presentations
+- Images should be "Instagram-worthy" - polished and share-worthy
+
+## Instagram-Specific Visual Style
+- Bright, vibrant, and visually striking designs
+- High production value with polished, professional aesthetics
+- Lifestyle-oriented visuals that inspire and motivate
+- Clean, modern design with attention to visual harmony
+- Colors that pop and create visual interest
+- Emphasis on beauty, inspiration, and aspiration
+- Photo-realistic or high-quality illustration styles
+
+## Content Adaptation for Instagram
+When creating image prompts for Instagram, emphasize:
+1. **Visual Appeal**: Prioritize beauty and aesthetic quality
+2. **Inspiration Factor**: Images that motivate and inspire action
+3. **Lifestyle Integration**: Show how content applies to real life
+4. **High Quality**: Polished, professional-looking visuals
+5. **Engagement-Driven**: Visuals that encourage likes, comments, and shares
+6. **Story-Worthy**: Content people want to share in their stories
+
+## Instagram Image Prompt Enhancement
+Add these elements to the base prompt:
+- "Instagram-worthy aesthetic with bright, vibrant colors and high visual appeal"
+- "Polished, professional quality suitable for lifestyle and inspiration content"
+- "Square or vertical format optimized for Instagram feed display"
+- "Visually striking design that encourages engagement and sharing"
+- "Modern, aspirational aesthetic that fits Instagram's visual culture"

@@ -1,0 +1,37 @@
+# Resend (Email) Image Generation Prompt
+
+## Platform-Specific Guidelines for Email
+- Email-optimized images that work across different email clients
+- Horizontal (16:9) or square (1:1) formats for better email display
+- Professional, newsletter-style aesthetics
+- Clear, readable visuals that work well in email templates
+- Focus on subscriber value and email engagement
+- Images should enhance email content and encourage click-through
+
+## Email-Specific Visual Style
+- Clean, professional design suitable for email newsletters
+- High contrast for readability across email clients
+- Professional color schemes that work in various email environments
+- Clear typography and visual hierarchy
+- Email-safe design elements that render consistently
+- Focus on clarity and professional presentation
+- Suitable for both HTML and plain text email contexts
+
+## Content Adaptation for Email
+When creating image prompts for email, emphasize:
+1. **Email Compatibility**: Designs that work across different email clients
+2. **Professional Presentation**: Newsletter-quality visual content
+3. **Subscriber Value**: Images that enhance the email experience
+4. **Click-Through Encouragement**: Visuals that motivate engagement
+5. **Brand Consistency**: Professional, trustworthy aesthetic
+6. **Accessibility**: Clear, readable designs for all subscribers
+7. **Newsletter Integration**: Images that complement email content
+
+## Email Image Prompt Enhancement
+Add these elements to the base prompt:
+- "Email-optimized design suitable for newsletter and email marketing"
+- "Professional, clean aesthetic that works across different email clients"
+- "High contrast, readable design with clear visual hierarchy"
+- "Newsletter-style layout that enhances subscriber experience"
+- "Professional color scheme suitable for email communication"
+- "Designed to encourage engagement and click-through from email"

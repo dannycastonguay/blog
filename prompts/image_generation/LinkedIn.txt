@@ -1,0 +1,36 @@
+# LinkedIn Image Generation Prompt
+
+## Platform-Specific Guidelines for LinkedIn
+- Professional, business-focused visual content
+- Horizontal (16:9) or square (1:1) formats work well for feed posts
+- Clean, corporate-friendly aesthetics that maintain professional credibility
+- Focus on business value, career development, and professional insights
+- Images should enhance professional authority and thought leadership
+- Suitable for B2B audiences and professional networking
+
+## LinkedIn-Specific Visual Style
+- Clean, professional, and business-appropriate designs
+- Corporate color schemes with sophisticated aesthetics
+- Modern business graphics and professional imagery
+- Charts, diagrams, and infographics work well
+- Emphasis on credibility, expertise, and professional value
+- Subtle branding elements that enhance authority
+- Professional photography or high-quality business illustrations
+
+## Content Adaptation for LinkedIn
+When creating image prompts for LinkedIn, emphasize:
+1. **Professional Authority**: Visuals that establish expertise and credibility
+2. **Business Value**: Clear connection to professional growth and success
+3. **Thought Leadership**: Images that support industry insights and knowledge sharing
+4. **B2B Appeal**: Content relevant to business professionals and decision-makers
+5. **Career Development**: Visuals that relate to professional advancement
+6. **Industry Relevance**: Images that resonate with specific professional sectors
+
+## LinkedIn Image Prompt Enhancement
+Add these elements to the base prompt:
+- "Professional, business-focused design suitable for LinkedIn's corporate environment"
+- "Clean, sophisticated aesthetic that enhances professional credibility"
+- "Modern business graphics with corporate color schemes"
+- "Designed for B2B audiences and professional networking"
+- "Emphasizes expertise, authority, and professional value"
+- "Suitable for thought leadership and industry insights"
