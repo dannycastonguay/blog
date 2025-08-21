@@ -1,0 +1,12 @@
+**Title:** Building a Powerful Local AI Workstation: Specs, Setup, and Lessons Learned
+
+I've recently embarked on a journey to build a local workstation capable of running the largest AI models without relying on cloud services or external APIs. The goal was to harness open-source tools for full privacy and control. Here's a detailed look at my setup and some insights from the process.
+
+**The Build:**
+
+- **GPU:** [NVIDIA GeForce RTX 5090](https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/) with 32 GB VRAM. *Chosen for its ability to handle large models entirely in GPU memory.*
+- **CPU:** [AMD Ryzen 9 9950X3D](https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d.html). *Great for multitasking and managing data loaders.*
+- **Motherboard:** [ASUS ROG Strix X870E-E Gaming WiFi](https://rog.asus.com/motherboards/rog-strix/rog-strix-x870e-e-gaming-wifi/). *Offers stability and wide connectivity.*
+- **Cooling:** [NZXT Kraken Elite 360](https://nzxt.com/products/kraken-360-elite-rgb-1) in a [Thermaltake Core P3 TG Pro](https://www.thermaltake.com/core-p3-tg-pro.html) case. *Keeps temperatures in check while maintaining a clean look.*
+- **Power Supply:** [ASUS ROG Strix 1000W Platinum ATX 3.1](https://rog.asus.com/power-supply-units/rog-strix/rog-strix-1000p-gaming/). *Offers quiet and reliable power delivery.*
+- **Storage:** [WD Black SN850X NVMe SSD

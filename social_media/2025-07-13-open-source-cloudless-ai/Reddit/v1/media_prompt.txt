@@ -1,0 +1,7 @@
+**MEDIA PROMPT:**
+
+"A professional, realistic illustration of a powerful AI workstation setup showing key components like the NVIDIA GeForce RTX 5090 GPU, AMD Ryzen 9 9950X3D CPU, ASUS ROG Strix X870E-E Gaming WiFi Motherboard, NZXT Kraken Elite 360 cooling system, and a WD Black SN850X NVMe SSD storage. Include visual elements that represent the open-source software and tools used, such as Ubuntu, Ollama, FaceFusion, and CUDA. Use a vibrant but professional color scheme with a clean, modern design. The image should clearly communicate the main benefit of building a local AI workstation that provides full privacy and control, as outlined in the social media content, in a way that looks authentic and valuable for social media."
+
+For Reddit: 
+
+"An educational, infographic-style illustration of a powerful AI workstation setup, highlighting the key components and their benefits, such as the ability of the NVIDIA GeForce RTX 5090 GPU to handle large models entirely in GPU memory. Include a visual representation of the open-source software and tools used, such as Ubuntu, Ollama, FaceFusion, and CUDA, emphasizing their role in providing full privacy and control. The design should be clear, readable, and suitable for Reddit community discussions. The image should encourage discussion about the value and feasibility of building a local AI workstation versus using cloud services or external APIs."
