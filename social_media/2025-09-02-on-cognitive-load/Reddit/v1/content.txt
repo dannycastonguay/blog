@@ -1,0 +1,23 @@
+**Title:** Lessons from ICPC and Yoga: Reducing Cognitive Load for Better Performance
+
+In Baku, Azerbaijan, around 140 teams are participating in the ICPC, a prestigious programming contest with alumni like Nikolai Durov of Telegram and Tony Hsieh of Zappos. Reflecting on my yoga practice, I found parallels between competitive programming and yoga regarding managing cognitive load.
+
+Here are some key insights:
+
+- **Cognitive Load in Yoga and Programming**
+  - In yoga, teachers often create symmetrical flows, which can increase cognitive load as practitioners try to remember and mirror each movement.
+  - > "Tracking perfect mirrors adds work for the teacher and the students. That attention cost breaks flow."
+  - Similarly, in programming, reducing unnecessary cognitive tasks allows teams to focus on solving problems efficiently.
+
+- **Principles Over Symmetry**
+  - *The goal is balance, not bookkeeping.* Stretching both sides is crucial, but it doesn't require perfect mirroring.
+  - In competitive programming, teams excel by simplifying tasks: one member reduces the problem, another codes, and the third tests.
+  - > "They cut anything that does not move the solution forward. The principles stay the same. Clarity. Correctness. Complexity in bounds."
+
+- **Applying to Broader Contexts**
+  - This approach can extend to product development, startups, and even parenting. Focus on strategy and the moment rather than perfect execution.
+  - Gen AI can assist by handling prep work and bookkeeping, but critical thinking remains vital.
+
+**Discussion Questions:**
+1. How do you manage cognitive load in your personal or professional life for better efficiency?
+2. Have you found parallels between seemingly unrelated disciplines that have helped you improve in both areas?
