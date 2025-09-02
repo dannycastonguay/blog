@@ -1,0 +1,11 @@
+SUBJECT: Balance Your Mind: Insights from Yoga and Competitive Programming
+
+It's day two of the International Collegiate Programming Contest (ICPC) in Baku, Azerbaijan. This prestigious event has brought together around 140 teams of talented students from around the world, including future innovators who, like past participants, may go on to impact major tech companies.
+
+While reflecting on the ICPC, I found myself drawing parallels between competitive programming and yoga—particularly the concept of cognitive load. In my yoga practice, I've observed that the focus on perfect symmetry can sometimes break the flow, adding unnecessary mental tracking. Instead, embracing balance over strict mirroring allows for a more intuitive practice. This principle of reducing cognitive load can be applied to various aspects of life and work, from building products to raising children.
+
+Great programming teams also aim to minimize cognitive load. Each member plays a specific role, focusing on simplifying problems and cutting out anything that doesn't directly contribute to the solution. This creates clarity and efficiency, much like a well-balanced yoga flow.
+
+A side note on Gen AI: while it can help with repetitive tasks and setup, the core thinking must remain human. As in yoga, it's about holding onto principles and letting go of unnecessary burdens.
+
+Namaste.
