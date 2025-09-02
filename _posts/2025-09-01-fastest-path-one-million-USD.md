@@ -3,7 +3,7 @@ title: Fastest Path to One Million USD
 ---
 
 
-At BLD.ai we work with builders. Product managers, designers, data scientists, data engineers, mobile developers. Hands-on, flat, and fast. Our overhead is software. People come for money, yes, but they stay for interesting work. Work that is project-based, non-repetitive, and challenging.
+At bld.ai we work with builders. Product managers, designers, data scientists, data engineers, mobile developers. Hands-on, flat, and fast. Our overhead is software. People come for money, yes, but they stay for interesting work. Work that is project-based, non-repetitive, and challenging.
 
 The question for this post is: what is the fastest way to make a million dollars? I want to frame it in a way that is not just about the million, but about creating more value and setting yourself up for ten or a hundred million. This applies at any age. It applies to my own kids, who are 11, 9, and 6.
 
