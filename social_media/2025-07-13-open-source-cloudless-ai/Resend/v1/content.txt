@@ -1,0 +1,24 @@
+SUBJECT: Building the Ultimate AI Workstation: My Journey to Full Autonomy
+
+Ever dreamt of having a powerhouse workstation that can run the largest AI models without relying on cloud services? That's exactly what I set out to create—an all-local, open-source setup ensuring full privacy and control.
+
+Here's a quick look at my ultimate build:
+
+- *GPU*: NVIDIA GeForce RTX 5090, chosen for its 32 GB VRAM to handle large models effortlessly.
+- *CPU*: AMD Ryzen 9 9950X3D, perfect for multitasking and running local services.
+- *Motherboard*: ASUS ROG Strix, offering stability and wide connectivity.
+- *Cooling*: NZXT Kraken Elite 360, paired with a sleek open frame case.
+- *Power supply*: ASUS ROG Strix 1000W, ensuring quiet and reliable performance.
+- *Storage*: WD Black 8 TB NVMe SSD, providing fast loads and ample space.
+- *RAM*: Corsair Vengeance 64 GB, for handling parallel jobs smoothly.
+- *Monitor*: PRISM+ 49AL, for ultra-clear visuals and a seamless experience.
+
+Total cost? Around $7,000 USD, but it's worth every penny for the performance and autonomy.
+
+I initially installed Ubuntu 25.04 but faced some compatibility issues, so I switched to Ubuntu 24.04 LTS, which worked much better. Tools like Ollama and FaceFusion let me run local models entirely in GPU memory.
+
+There were a few hiccups along the way, like an upside-down Kraken screen and needing to use Windows for some device controls. But with Windows Subsystem for Linux, I got the best of both worlds—Windows for device management and WSL for my Linux workflow.
+
+Next on my list is building a Model Context Protocol layer to automate tasks like sending emails and updating spreadsheets—all using free and open-source software.
+
+Curious for more details? Head over to the blog to dive deeper into
