@@ -1,0 +1,29 @@
+[
+  {
+    "platform": "Resend",
+    "page_name": "2025-09-02-on-cognitive-load",
+    "id": "batch-2025-09-02-on-cognitive-load",
+    "text": "It's day two of the International Collegiate Programming Contest (ICPC) in Baku, Azerbaijan. This prestigious event has brought together around 140 teams of talented students from around the world, including future innovators who, like past participants, may go on to impact major tech companies.\n\nWhile reflecting on the ICPC, I found myself drawing parallels between competitive programming and yoga\u2014particularly the concept of cognitive load. In my yoga practice, I've observed that the focus on perfect symmetry can sometimes break the flow, adding unnecessary mental tracking. Instead, embracing balance over strict mirroring allows for a more intuitive practice. This principle of reducing cognitive load can be applied to various aspects of life and work, from building products to raising children.\n\nGreat programming teams also aim to minimize cognitive load. Each member plays a specific role, focusing on simplifying problems and cutting out anything that doesn't directly contribute to the solution. This creates clarity and efficiency, much like a well-balanced yoga flow.\n\nA side note on Gen AI: while it can help with repetitive tasks and setup, the core thinking must remain human. As in yoga, it's about holding onto principles and letting go of unnecessary burdens.\n\nNamaste.",
+    "created_at": "2025-09-29 02:45:02",
+    "url": "Sent to 6 subscribers",
+    "status": "success"
+  },
+  {
+    "platform": "LinkedIn",
+    "page_name": "2025-09-02-on-cognitive-load",
+    "id": "",
+    "text": "",
+    "created_at": "2025-09-29 02:45:07",
+    "status": "error",
+    "error": "Error getting LinkedIn user ID: Failed to get user ID: 401 - {\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}"
+  },
+  {
+    "platform": "X",
+    "page_name": "2025-09-02-on-cognitive-load",
+    "id": "1972492812177358970",
+    "text": "Cracking the ICPC code in Baku! \ud83e\udde9 It's all about reducing cognitive load\u2014just like yoga, balance over symmetry. \ud83d\ude80 How do you streamline your problem-solving? #ICPC2023 #MindfulCoding #YogaWisdom",
+    "created_at": "2025-09-29 02:45:08",
+    "url": "https://x.com/dannycast0nguay/status/1972492812177358970",
+    "status": "success"
+  }
+]
