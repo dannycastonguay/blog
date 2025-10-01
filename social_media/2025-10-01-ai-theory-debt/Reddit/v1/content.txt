@@ -1,0 +1,26 @@
+**Title:** Understanding AI Theory Debt: A Hidden Cost in Software Development
+
+In software development, we often hear about technical debt, but there's a newer, subtler form of debt emerging in the age of AI-augmented coding: **AI theory debt**. Here's a breakdown of what it involves and how to manage it.
+
+**What is AI Theory Debt?**
+- Technical debt refers to challenges in maintaining a codebase due to factors like developer turnover or evolving requirements.
+- **AI theory debt** arises when AI tools generate code that works but lacks a deep understanding of why it works, leading to potential issues when modifications are needed.
+
+> "You hold the result, not the insight."
+
+**Key Issues with AI Theory Debt:**
+- You may end up with code that functions but is hard to tweak without causing cascading failures.
+- The lack of internalized theory means you spend time reverse engineering and debugging, which could have been avoided.
+
+**Managing AI Theory Debt:**
+1. **Use AI for scaffolding, not full design**: Let AI help with initial prototypes, but take charge of the complete design.
+2. **Document thoroughly**: Always annotate and document the code, including metaphors, invariants, and edge cases.
+3. **Refactor with understanding**: Regularly rewrite code to ensure full comprehension.
+4. **Build understanding**: Create diagrams, narratives, and run experiments to develop a robust theory.
+5. **Effective handover**: When passing code, include the underlying metaphors and insights, not just the code itself.
+
+Theory debt is dangerous because it's often invisible until it's too late. It's not just about borrowing code but also understanding the insights behind it.
+
+**Discussion Questions:**
+- Have you encountered AI theory debt in your projects, and how did you address it?
+- What strategies do you use to ensure comprehensive understanding when working with AI-generated code?
