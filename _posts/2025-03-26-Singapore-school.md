@@ -2,44 +2,44 @@
 Title: Singapore school
 ---
 
-Today we had a parent-teacher meeting at the kids' school, and we exchanged thoughts about what we observed. Overall, the experience was better than what we've seen in the U.S., definitely more rigorous, though lacking in innovation.
+Today we had a parent teacher meeting at the kids' school, and we exchanged thoughts about what we observed. Overall, the experience was better than in the U.S., more rigorous, with room for more innovation.
 
-The kids were very obedient and shy, which isn't negative. It's preferable to insolent, disruptive behavior we often saw in the U.S. schools. The classrooms here are quieter and more conducive to concentration, setting fertile ground for steady academic progress. There wasn't any disruptive pecking order based on fashion or aggression, unlike American classrooms.
+The kids were obedient and a bit shy, which reflects a respectful culture. It was preferable to the insolent, disruptive behavior we often saw in the U.S. schools. The classrooms here are quieter and more conducive to concentration, setting fertile ground for steady academic progress. There was no disruptive pecking order based on fashion or aggression, unlike American classrooms.
 
-One positive thing we both noticed was the upcoming school camp, which involves two nights and three days of outdoor activities. We appreciated that, recalling our own positive experiences with overnight trips at a young age. We discussed why U.S. public schools rarely organize similar events. It's probably less about liability and more about logistics and cost. In the U.S., private camps manage insurance and logistics by charging parents directly. Here, teachers are certified for activities like rock climbing and canoeing, and there's careful overnight supervision.
+One positive thing we both noticed was the upcoming school camp, which involves two nights and three days of outdoor activities. We appreciated that, recalling our own positive experiences with overnight trips at a young age. We discussed why U.S. public schools rarely organize similar events. It is probably less about liability and more about logistics and cost. In the U.S., private camps manage insurance and logistics by charging parents directly. Here, teachers are certified for activities like rock climbing and canoeing, and there is careful overnight supervision.
 
 As we talked, I sipped a turmeric latte, intentionally ordering the most pretentious item on the menu. Surprisingly, it tasted good, buttery and frothy without any coffee, delivering a healthy dose of antioxidants.
 
 In this blog, I make strong claims intentionally to spark debate. Each bold claim below includes arguments from both sides.
 
-## 1. The Growth Mindset is Lip Service
+## 1. The Growth Mindset Is Not Fully Reflected in Practice
 
-I argue that the school repeatedly mentions growth mindset but fundamentally contradicts it with standardized testing (PSLE), limiting students based on early performance.
+I argue that the school promotes growth mindset but PSLE still shapes students early.
 
 Counterargument: Singapore ranks highly globally in education benchmarks such as PISA, suggesting effectiveness in identifying academic capabilities at scale.
 
-Counter-counterargument: High global rankings primarily confirm skill at test-taking rather than innovation or adaptability. Standardized testing negatively affects all students by limiting creativity and true capability development, as learning becomes repetitive and tedious rather than explorative and enriching.
+Counter counterargument: Standardized testing can narrow creativity and capability development, as learning becomes repetitive rather than explorative.
 
 ## 2. Leadership Education is Misrepresented
 
-I argue that the school’s concept of leadership, exemplified by being a prefect, is not true leadership. It emphasizes conformity rather than boldness and contrarian thinking.
+I argue that the school’s concept of leadership, exemplified by being a prefect, leans toward conformity over boldness.
 
-Counterargument: Schools might argue that structured leadership roles like prefects instill discipline, collective responsibility, and provide introductory leadership training.
+Counterargument: Schools might argue that structured leadership roles like prefects instill discipline and collective responsibility.
 
-Counter-counterargument: Real leadership is contrarian, bold, and risk-taking, qualities exemplified by Lee Kuan Yew himself, who was originally a Malaysian Anti-federal dissenter, not conforming to traditional expectations. The school’s current system does not cultivate such leadership qualities effectively.
+Counter counterargument: The current system could build these qualities more by encouraging initiative and experimentation.
 
 ## 3. Entrepreneurship Education is Almost Completely Missing
 
-I argue the education system overlooks the immense entrepreneurial potential of students, especially those outside top academic tiers, limiting their opportunities for innovation.
+I argue the education system overlooks the entrepreneurial potential of many students.
 
-Counterargument: Singapore has initiated various reforms, including SkillsFuture and revisions to PSLE scoring, to support entrepreneurship and holistic education.
+Counterargument: Singapore has introduced reforms such as SkillsFuture and revisions to PSLE scoring.
 
-Counter-counterargument: Despite these reforms, the fundamental approach remains placement-centric, focusing on getting into top schools rather than nurturing genuine entrepreneurial skills. This results in minimal local startup success stories compared to China or the U.S. Startups here, such as Grab or Sea, originated as copies or were founded by foreigners, highlighting a systemic shortfall in fostering true local innovation.
+Counter counterargument: This leaves more room to grow early entrepreneurial skills and broaden the founder pipeline.
 
 ## 4. Actions Speak Louder Than Words
 
-I'm offering my own kids the opportunity to drop out of their primary school and join me at bld.ai school. Our school will operate directly from a rented shop house, featuring spaces designed for collaborative learning, physical exercise such as yoga and jiu-jitsu, and adaptable classrooms for various activities. The curriculum will integrate rigorous, practical math lessons through Art of Problem Solving, daily short language sessions, and extensive project-based learning.
+I am giving my kids the option to join an alternative track at bld.ai school. Our school will operate from a rented shop house, with spaces for collaborative learning, yoga, jiu jitsu, and flexible classrooms. The curriculum will integrate rigorous math through Art of Problem Solving, short daily language sessions, and project based learning.
 
-We welcome other students to join, but there will be significant parental involvement required. Parents must actively mentor, facilitate learning, and participate alongside their children. Each student will embark on entrepreneurial ventures, learning practical business skills with a clear goal: developing their own businesses capable of generating at least $1,000 per month in revenue. By blending practical skills, entrepreneurial thinking, and personalized education, we aim to foster true innovation and adaptability, equipping our students to significantly contribute to Singapore's future economy.
+We may welcome other students to join, but there will be significant parental involvement. Parents must mentor, facilitate learning, and participate alongside their children. Each student will work on ventures aimed at real early revenue. By blending practical skills, entrepreneurial thinking, and personalized education, we aim to foster innovation and adaptability.
 
-Lee Kuan Yew, as a pragmatic leader, would advocate rapid implementation of AI-driven personalized learning, shifting from memorization to critical thinking, eliminating high-pressure exams, prioritizing coding and AI education, and aggressively retraining teachers. His decisive leadership style would transform Singapore into a global model for educational innovation. This is precisely the vision we aim to fulfill through bld.ai school.
+Lee Kuan Yew’s pragmatism points toward rapid adoption of AI driven personalized learning, shifting from memorization to critical thinking, prioritizing coding and AI education, and retraining teachers. His decisiveness shows how Singapore could lead in educational innovation again. This is the direction we hope to contribute to through bld.ai school.
