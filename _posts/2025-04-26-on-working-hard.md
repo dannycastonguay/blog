@@ -2,7 +2,7 @@
 title: On Working Hard
 ---
 
-Ever since I was young, one of the things reinforced by my parents—all four of them, my two dads and my two moms—was the value of working hard.
+Ever since I was young, one of the things reinforced by my parents (all four of them, my two dads and my two moms) was the value of working hard.
 
 This upbringing taught me it’s actually wrong to think you should work smart, not hard.
 
@@ -20,7 +20,7 @@ The body is a great metaphor for the mind.
 
 ## 2. The Obstacle Course Mind
 
-For your mind to work hard, it should be lean, strong, and capable of enduring a long time—less like a heavy lifter and more like an obstacle-course runner.
+For your mind to work hard, it should be lean, strong, and capable of enduring a long time. Less like a heavy lifter and more like an obstacle-course runner!!
 
 With a mind like that, you can conquer anything. You can climb the tallest mountains, swing the longest distances, and more.
 
@@ -52,7 +52,9 @@ When you believe you can achieve something, you naturally work harder and don’
 
 This principle applies to many things, such as love.
 
-When people say they’re no longer in love or they have commitment issues or they’re avoidant—it’s a choice.
+When people say they’re no longer in love or they have commitment issues or they’re avoidant.
+
+It’s a choice.
 
 Are you willing to work hard at love and being a good person, or are you a victim of your emotions?
 
@@ -60,7 +62,9 @@ It’s a choice like anything else.
 
 ## 7. Overcoming Hate and Betrayal
 
-When you genuinely love the world and the people around you—even your enemies and those who’ve repeatedly betrayed you—you gain power over hate.
+When you genuinely love the world and the people around you—even your enemies and those who’ve repeatedly betrayed you.
+
+You gain power over hate.
 
 You no longer harbor hate, only love for others. This choice makes you incredibly strong.
 
@@ -68,11 +72,11 @@ It doesn’t mean ignoring what they’ve done, but rather accepting people and 
 
 ## 8. Working Hard Across Life
 
-Working hard applies broadly—to training for a marathon, recovering from an injury, or building a startup when everyone else gives up.
+Working hard applies broadly: training for a marathon, recovering from an injury, or building a startup when everyone else gives up.
 
 If you keep going because of grit, it’s fundamentally the same thing: working hard.
 
-Success in life revolves around working hard—whether to build meaningful relationships or professional success.
+Success in life revolves around working hard, whether to build meaningful relationships or professional success.
 
 ## 9. No Perfect Fairness, but a Universal Truth
 
@@ -86,7 +90,9 @@ Success and effort are not directly proportional. However, everyone I’ve met w
 
 You don’t have to prioritize everything simultaneously. You can’t run a marathon all day, every day.
 
-But you can prioritize multiple important things each day. Family, career, learning new skills, exercise, sleep—you can dedicate effort daily to each.
+But you can prioritize multiple important things each day. Family, career, learning new skills, exercise, sleep.
+
+You can dedicate effort daily to each.
 
 ## 12. The Greatest Strength and Greatest Weakness
 
@@ -100,7 +106,7 @@ I have good news: I believe I’m very good at teaching people how to work hard.
 
 People who know me, who’ve worked alongside me, who’ve seen my successes and failures, would probably universally say I work extremely hard and don’t give up.
 
-Sometimes I don’t prioritize something right away—but when I’m ready, I address it. You don’t need to address everything at once, as long as the intention to work hard and improve remains clear.
+Sometimes I don’t prioritize something right away but when I’m ready, I address it. You don’t need to address everything at once, as long as the intention to work hard and improve remains clear.
 
 ## 14. On Working Too Hard (The 80% Rule)
 
