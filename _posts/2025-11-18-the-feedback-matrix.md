@@ -35,4 +35,4 @@ You show how you would approach the problem.
 
 That is great feedback.
 
-This framework applies to everything. Presentations. Writing. Code. Design. Business ideas. Strategy. Companies.
+This framework applies to everything: Presentations. Writing. Code. Design. Math proofs. Data analysis. Product specs. Business strategy. Pricing models. Sales scripts. Marketing copy. Hiring decisions. UX flows. Architecture diagrams. Operating procedures. Checklists. Recipes. Photography composition. Sound mixing. Choreography. Yoga poses. Ballet movements. Weightlifting form. Climbing routes. Jiu jitsu positions. Parenting. Negotiation. Thinking.
