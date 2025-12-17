@@ -2,7 +2,9 @@
 title: On Glassdoor
 ---
 
-If you search for reviews about bld.ai on platforms like Glassdoor, you'll notice some very negative feedback. Until now, I’ve chosen not to respond, partly because I find those websites somewhat disingenuous. I believe strongly in transparency but also accountability through identity. If someone were exposing unethical behavior as a whistleblower, anonymity might make sense—but this is not the case with bld.ai.
+If you search for reviews about bld.ai on platforms like Glassdoor, you'll notice some very negative feedback. Until now, I’ve chosen not to respond, partly because I find those websites somewhat disingenuous. I believe strongly in transparency but also accountability through identity. If someone were exposing unethical behavior as a whistleblower, anonymity might make sense.
+
+But this is not the case with bld.ai.
 
 We have consistently been extremely transparent. Every work log, all revenue, and detailed expenses were openly visible to our entire team for a long period. We’ve clearly communicated significant changes, like transitioning from an employee to a contractor model, always ensuring fairness. I’ve personally responded openly to anyone who contacted me via email or WhatsApp.
 
