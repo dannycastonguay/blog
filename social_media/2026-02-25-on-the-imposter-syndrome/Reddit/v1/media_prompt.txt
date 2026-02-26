@@ -1,0 +1,13 @@
+**MEDIA PROMPT:**
+
+"An educational, professional, and genuine illustration of a junior analyst surrounded by more experienced colleagues in a data center environment. The junior analyst should appear initially intimidated but then empowered as they focus on executing tasks effectively. 
+
+Include visual representations of the six practical steps to build trust: a rapidly responding chat bubble, a checklist for over-preparation, a clear document for writing things clearly, a loop being closed for closing every loop, a light bulb symbolizing a gap in knowledge and its quick address, and a book or laptop symbolizing daily learning. 
+
+Also, incorporate elements representing modern tools like ChatGPT for faster research, scenario simulation, and sharper question preparation. 
+
+Use a clean, modern design with a balanced color scheme that includes cool blues and warm oranges to represent the shift from intimidation to empowerment. 
+
+The image should authentically communicate the main value proposition of overcoming imposter syndrome through execution and continuous learning, in a way that encourages discussion and engagement on Reddit. It should provide a clear, non-promotional visual representation of the practical steps to build trust and leverage modern tools in a real-world data center environment."
+
+This image will be in a horizontal (16:9) format suitable for Reddit, with an emphasis on substance and information, presented in an infographic style layout. It should be professional yet approachable, respecting the Reddit community culture, and encouraging discussion and engagement.
