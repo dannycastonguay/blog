@@ -1,5 +1,6 @@
-
-
+---
+title: On The Imposter Syndrome
+---
 
 This post is for you if you suffer from imposter syndrome. I wrote it for a junior analyst on one of our teams at bld.ai serving a global data center operstor. 
 
