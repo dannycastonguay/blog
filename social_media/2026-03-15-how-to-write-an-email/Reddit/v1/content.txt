@@ -1,0 +1,48 @@
+**Title: Mastering Email Communication: Speed, Clarity, and Judgment**
+
+In today's fast-paced world, effective email communication is crucial. It's not about grammar, but rather about speed, clarity, and judgment. Here are some essential guidelines to make your emails more efficient and impactful:
+
+1. **Start with the Point**
+   - Begin with the ask, decision, risk, or update. 
+   - Avoid warming up or storytelling.
+
+2. **Put Bad News First**
+   - Address problems early without hiding behind politeness.
+
+3. **Use as Few Words as Possible**
+   - Cut filler and repetition to ensure every sentence adds value.
+
+4. **Be Literal**
+   - Avoid sarcasm and coded language. Be direct and clear.
+
+5. **Be Specific**
+   - Use concrete details like names, numbers, and dates.
+
+6. **One Email, One Job**
+   - Focus each email on one primary task: ask, decide, update, escalate, or confirm.
+
+7. **Make the Next Step Obvious**
+   - Clearly state who needs to do what and by when.
+
+8. **Separate Facts, Judgment, and Recommendation**
+   - Distinguish what happened, your interpretation, and your suggestion.
+
+9. **Write for Forwarding**
+   - Ensure the email makes sense if forwarded without additional context.
+
+10. **AI is Fine. Generic Language is Not.**
+    - Edit AI-generated content to make it specific and human-sounding.
+
+11. **Respect Time**
+    - Aim for brevity. If longer, put the key point first.
+
+12. **Do Not Save Face at the Expense of Clarity**
+    - Prioritize being direct over being overly polite.
+
+13. **Keep Threads Clean**
+    - Start a new email if the topic changes. Only CC those who need to know.
+
+**Subject Lines:**
+- Use clear subject lines to help readers prioritize:
+  - Action needed today: approve revised offer
+  - Decision needed:
