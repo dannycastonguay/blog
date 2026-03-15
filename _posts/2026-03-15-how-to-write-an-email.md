@@ -112,7 +112,7 @@ If the topic changes, start a new email with a new subject line.
 
 CC only people who need to act or know.
 
-Subject lines
+# 14. Subject lines help triage
 
 The subject line should help the reader triage the email fast.
 
@@ -128,7 +128,7 @@ Following up
 Hi
 Update
 
-Default structure
+# 15. Default structure
 
 Subject: [Action, Decision, Update, Risk]: [topic]
 
@@ -140,7 +140,7 @@ Subject: [Action, Decision, Update, Risk]: [topic]
 
 [Owner and deadline.]
 
-# Examples
+# 16. Examples
 
 Weak:
 
@@ -170,7 +170,7 @@ Likely cause is narrow audience targeting.
 
 Recommendation: expand targeting today and review performance again tomorrow at 2 pm.
 
-# When not to use email
+# 17. When not to use email
 
 Do not use email for long back and forth, unresolved debate, or high emotion.
 
@@ -178,7 +178,7 @@ Use a call or chat when speed matters more than record keeping.
 
 Then send a short email summary with the decision.
 
-# Final rule
+# 18. Final rule
 
 A good email does not try to sound smart, warm, or impressive.
 
