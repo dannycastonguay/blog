@@ -6,7 +6,7 @@ This is not about grammar. It is about speed, clarity, and judgment.
 
 We write emails so the reader can understand the point in seconds, decide quickly, and forward the message without extra explanation.
 
-1. Start with the point
+# 1. Start with the point
 
 The first sentence should say the ask, decision, risk, or update.
 
