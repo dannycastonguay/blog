@@ -1,0 +1,49 @@
+**Title: How to Write Emails That Get to the Point Quickly**
+
+In the fast-paced world of email communication, getting your message across quickly and clearly is crucial. Here's a concise guide on how to write emails that are direct and effective.
+
+**Key Points:**
+
+1. **Start with the Point**
+   - Begin with the ask, decision, risk, or update.
+   - Avoid building suspense or telling a story.
+
+2. **Put Bad News First**
+   - State problems early without hiding them behind context or politeness.
+
+3. **Use as Few Words as Possible**
+   - Remove filler, repetition, and softening language.
+
+4. **Be Literal**
+   - Communicate exactly what you mean without sarcasm or hints.
+
+5. **Be Specific**
+   - Use concrete names, numbers, dates, and facts.
+   - *Example:* "Vendor X missed the March 12 deadline. Launch now moves to March 19 unless we reduce scope."
+
+6. **One Email, One Job**
+   - Each email should focus on a single task: ask, decide, update, escalate, or confirm.
+
+7. **Make the Next Step Obvious**
+   - Clearly state who needs to do what by when.
+
+8. **Separate Facts, Judgment, and Recommendation**
+   - Distinguish between what happened, what it means, and what should be done.
+
+9. **Write for Forwarding**
+   - Ensure emails make sense without additional context for forwarding.
+
+10. **AI is Fine, Generic Language is Not**
+    - Use AI tools but ensure language is specific and human.
+
+11. **Respect Time**
+    - Aim for emails that can be read on one screen.
+
+12. **Do Not Save Face at the Expense of Clarity**
+    - Be direct and clear rather than polite but vague.
+
+13. **Keep Threads Clean**
+    - Use the same thread only if the topic remains the same.
+
+14. **Subject Lines Help Triage**
+    -
