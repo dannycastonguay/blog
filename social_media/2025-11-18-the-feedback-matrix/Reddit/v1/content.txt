@@ -1,0 +1,26 @@
+**Understanding Feedback: A Simple Matrix for Effective Critiques**
+
+When we give feedback, it often falls into a simple two-by-two matrix. This framework can help us understand how to make our feedback more valuable and actionable across various fields. Here's a breakdown of the concept:
+
+- **Two Axes of Feedback**:
+  - **Agreement vs. Disagreement**: Are you on the same page, or do you see things differently?
+  - **Effort vs. No Effort**: Are you putting in the work to improve or just making suggestions?
+
+- **Types of Feedback**:
+  1. **Agreement + No Effort**:
+     - > "This is good. Did you think about adding X?"
+     - *This is the most common and least helpful form of feedback.* While it might feel constructive, it often adds little value as it pushes work back onto the original creator without offering substantial help.
+  
+  2. **Agreement + Effort**:
+     - > "This is good. Here is a sentence you can add."
+     - **Actionable feedback**: By contributing a specific solution, you save time and provide tangible improvements. This is a step up because you're actively participating in enhancing the work.
+  
+  3. **Disagreement + No Effort**:
+     - > "I think this part is wrong."
+     - *Disagreeing thoughtfully can be more valuable than agreeing.* Even without a solution, highlighting potential issues can prompt the creator to think critically and explore alternatives.
+  
+  4. **Disagreement + Effort**:
+     - > "This part is wrong, and here’s how I’d fix it."
+     - **The gold standard of feedback**: Offering not just criticism but also a solution demonstrates deep engagement and provides a clear path forward.
+
+- **Universal Application**: This matrix isn't limited to any one field. Whether you're critiquing a presentation, writing code, designing a UI, or even evaluating
