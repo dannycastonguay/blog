@@ -1,0 +1,31 @@
+**Title: Understanding the 'Triangle of Talent': A Framework for Identifying Superstar Employees**
+
+Gary Tan from Y Combinator recently highlighted Shaan Puri’s "Triangle of Talent," a framework for identifying and nurturing top talent within organizations. This concept revolves around the idea that the most valuable employees are those who can consistently identify and solve critical problems.
+
+**Key Points:**
+
+- **The Triangle of Talent:** 
+  - This framework emphasizes that every employee is fundamentally a problem solver.
+  - The most valuable employees are those who consistently identify and address the most critical problems.
+
+- **The Evolution of Talent Levels:**
+  1. **Level 1 – Useless:** Struggling with basic tasks, like Milo in the beginning of his journey.
+  2. **Level 2 – Task Monkey:** Able to follow clear instructions to complete tasks.
+  3. **Level 3 – Problem Solver:** Can independently solve given problems.
+  4. **Level 4 – Systems Thinker:** Collaborates and creates plans that enhance group efficiency.
+  5. **Level 5 – Superstar:** Identifies and solves the most important problems, driving success.
+
+- **AI Augmentation in Creativity:**
+  - Collaborated with Yudha, an illustrator using AI tools to enhance his work.
+  - This combination of human creativity with AI is being explored for its potential to boost productivity in creative fields.
+
+- **Innovative Presentation:**
+  - The concept is presented through a video with illustrations and a synthesized voiceover created using AI technologies.
+
+> "People who can find the right problems and solve them are the most valuable."
+
+**Discussion Questions:**
+1. How do you think AI tools can further enhance the creative process in fields beyond programming and illustration?
+2. What strategies do you use to identify and prioritize the most critical problems in your work environment?
+
+Looking forward to hearing your thoughts and experiences!
