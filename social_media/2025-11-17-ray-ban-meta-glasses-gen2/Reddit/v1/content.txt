@@ -1,0 +1,36 @@
+### Title: How Wearable Tech is Revolutionizing Offshore Operations and Beyond
+
+In a recent discussion with an offshore operator in Singapore, the conversation took a fascinating turn toward the evolving role of technology in the maritime industry. Despite advancements, the human element remains crucial, yet a new wave of wearables might redefine industry standards.
+
+**Key Points:**
+
+- **Human Factor in Technology**: 
+  - > "No matter how much technology you give people, people remain a major factor in the equation."
+  - *Tacit knowledge* possessed by skilled crew members is irreplaceable by AI today.
+
+- **Safety Dynamics**: 
+  - Shift from Behavior-Based Safety (BBS) to *human performance* approaches.
+  - Focus on improving systems rather than blaming individuals for near misses.
+
+- **Emergence of Wearables**: 
+  - Wearables are becoming integral, much like consumer tech—think fitness trackers and smart glasses.
+  - The new **Ray-Ban Meta glasses** could potentially replace phones as primary devices.
+
+- **Real-World Applications**: 
+  - Wearables are transforming everyday tasks:
+    - "I now take more pictures with my glasses than with my phone."
+    - While biking, glasses enable live video calls, showing what the wearer sees.
+    - At airports, glasses can interpret plane tickets using OCR, enhancing convenience.
+
+- **Integration with LLMs**: 
+  - Glasses serve as interfaces to Large Language Models (LLMs), providing hands-free interaction.
+  - Despite some limitations, they offer a new level of convenience.
+
+- **Future Implications**: 
+  - As connectivity improves globally (e.g., Starlink on ships, 5G everywhere), wearables will drive significant industry changes.
+  - Companies that adapt without excessive spending will gain competitive advantages.
+
+**Discussion Questions:**
+
+1. How do you see the balance between human expertise and technology evolving in industries heavily reliant on skilled labor, like maritime operations?
+2
