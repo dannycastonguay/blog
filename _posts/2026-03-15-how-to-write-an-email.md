@@ -142,11 +142,13 @@ Subject: [Action, Decision, Update, Risk]: [topic]
 
 # 16. Examples
 
-Weak:
+### Weak:
+
+Subject: Vendor situation
 
 Hi John, hope you are well. I wanted to reach out regarding the vendor situation. As you know, we have been discussing timelines internally and there have been a few complications on their side, so I thought I would share some context before getting your thoughts. Please let me know what you think.
 
-Better:
+### Better:
 
 Subject: Decision needed: vendor delay on onboarding
 
@@ -156,11 +158,15 @@ My recommendation is to remove feature Y and keep the March 15 launch.
 
 Please reply by 3 pm today so we can confirm with the client.
 
-Weak:
+---
+
+### Weak:
+
+Subject: Issues with campaign performance
 
 Just wanted to flag that there may possibly be some issues with the campaign performance and we may need to revisit the targeting.
 
-Better:
+### Better:
 
 Subject: Risk: campaign under target this week
 
