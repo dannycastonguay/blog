@@ -2,7 +2,7 @@
 title: The Entrepreneurial Homeschool, Part 3
 --- 
 
-[Part 1](./the-entrepreneurial-homeschool-part-1.md) and [Part 2](./the-entrepreneurial-homeschool-part-2.md) 
+[Part 1](https://blog.dannycastonguay.com/the-entrepreneurial-homeschooling-part-1/) and [Part 2](https://blog.dannycastonguay.com/the-entrepreneurial-homeschooling-part-2/) 
  covered self-regulation and abstract reasoning. The next layer is creating something other people want, then deciding whether it is worth creating. 
 
 # Part 3: Making Things Worth Wanting 
