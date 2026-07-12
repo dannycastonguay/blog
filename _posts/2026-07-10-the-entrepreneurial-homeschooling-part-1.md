@@ -44,5 +44,5 @@ I also teach them to be contrarian. When a lot of people believe something, that
 
 That is the first layer: a body capable of sustained attention, emotions that can be regulated, and a willingness to question the default. 
 
-Next: [Part 2](./the-entrepreneurial-homeschool-part-2.md)
+Next: [Part 2](https://blog.dannycastonguay.com/the-entrepreneurial-homeschooling-part-2/)
 
