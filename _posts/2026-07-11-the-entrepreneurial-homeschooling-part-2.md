@@ -2,7 +2,7 @@
 title: The Entrepreneurial Homeschool, Part 2
 ---
 
-[Part 1](./the-entrepreneurial-homeschool-part-1.md) covered the physical and emotional foundation. The next layer is learning to reason through difficult problems. 
+[Part 1](https://blog.dannycastonguay.com/the-entrepreneurial-homeschooling-part-1/) covered the physical and emotional foundation. The next layer is learning to reason through difficult problems. 
 
 # Part 2: Learning to Think Slowly
 
@@ -36,4 +36,4 @@ We always start on pen and paper, working numerical examples by hand. That is th
 
 Math teaches them to solve problems someone else chose. The next step is choosing what should exist.
 
-Next: [Part 3](./the-entrepreneurial-homeschool-part-3.md)
+Next: [Part 3](https://blog.dannycastonguay.com/the-entrepreneurial-homeschooling-part-3/)
