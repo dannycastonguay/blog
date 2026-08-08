@@ -1,0 +1,22 @@
+SUBJECT: How Wearable Tech is Transforming Industries
+
+Today, I had a fascinating meeting with an offshore operator in Singapore. As we discussed the critical role of technology in their operations, someone made a simple yet profound observation: *people remain a major factor in the equation*. 
+
+This is especially true on ships, where a skilled crew's tacit knowledge often surpasses what AI can achieve. Safety is evolving too, shifting from behavior-based safety (BBS) to human performance, focusing on system improvement rather than individual blame.
+
+But the real game-changer? Wearables.
+
+We’re already familiar with rings tracking sleep and smartwatches tracking workouts. Enter the Ray-Ban Meta glasses—potentially the first device to replace our phones as our go-to gadget.
+
+- Gen 1 was gimmicky, but Gen 2 is a breakthrough. With 8 hours of battery life and a convenient case, it's now my primary camera.
+- It’s replaced my AirPods too. While audio isn't perfect, the glasses are more comfortable and secure.
+
+The biggest shift? These glasses are becoming a primary interface to language learning models (LLMs). ChatGPT has been my go-to for years, but speaking directly to my glasses is even more convenient.
+
+Examples of impact:
+1. While biking with my kids, I can share the view with my parents via WhatsApp, thanks to the glasses' camera.
+2. At the airport, I asked the glasses about my gate by showing my ticket. After a few tries, it worked—real-time computer vision in action.
+
+The future is here. Ships connect via Starlink, mines have WiFi, and 5G is omnipresent. Wearables will transform how we work, making tasks safer and more efficient. Companies adapting to this change without huge investments will thrive, evolving into platforms that support organic and inorganic growth.
+
+Stay ahead of the curve with us as we explore these exciting developments!
