@@ -1,0 +1,7 @@
+**MEDIA PROMPT:**
+
+"A professional, realistic depiction of a person diving headfirst into creating their own app using platforms like Lovable.dev and Claude Code. The person should be shown engaged and focused, facing some hurdles (symbolic wall), but guided by AI (represented by a light or guiding path). Include elements that represent hiring the first developer, such as a handshake or a contract. Show the daily check-ins in a simple, visual form, like a calendar marked with tasks and progress. Use bright, vibrant colors with clean, modern design. The image should clearly communicate the journey of creating something people want and the excitement of making a vision a reality, in a way that looks authentic and valuable for social media."
+
+**INSTAGRAM-SPECIFIC MEDIA PROMPT:**
+
+"An Instagram-worthy aesthetic showing a vibrant and engaging visual journey of a person diving headfirst into creating their own app. They should be interacting with AI elements that are guiding them and helping them overcome hurdles (symbolized by a wall). Include a section showing a handshake or contract, representing hiring the first developer from the Global South. Visualize daily check-ins with a marked calendar or task list. The design should be polished, professional, and highly appealing, encouraging engagement and sharing. It should communicate the excitement and challenges of creating something people want, making viewers feel inspired to embark on their own startup journey."
