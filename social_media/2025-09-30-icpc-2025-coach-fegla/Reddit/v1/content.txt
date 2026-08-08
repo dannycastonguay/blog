@@ -1,0 +1,32 @@
+**Title:** Insights from Coach Fegla: AI in Competitive Programming and Developing Problem Solvers
+
+Earlier this month, I had the opportunity to sit down with Coach Fegla at the 2025 ICPC World Finals in Baku. With twenty years of experience leading teams to this prestigious event, he shared some fascinating insights on AI, competitive programming, and teaching effective problem-solving skills.
+
+**Key Points:**
+
+- **Agentic AI's Role in Competitive Programming:**
+  - AI is rapidly advancing and might one day compete for gold at the ICPC, but not quite yet.
+  - > "Competitive programming is exactly hard at that. The hardest ICPC problems have clear specs and tight constraints, there is no ambiguity there."
+  - The novelty and uniqueness of ICPC problems pose a challenge for AI, which excels with familiar patterns.
+
+- **Learning in an AI-Enhanced World:**
+  - A hybrid approach to learning is recommended—balancing self-reliance with AI assistance.
+  - Rotate through three problem types:
+    1. Easy problems for clean code and speed.
+    2. Medium problems for creativity and modeling.
+    3. Hard problems to identify gaps in knowledge.
+
+- **Teaching Kids to be Problem Solvers:**
+  - Start with logic-based activities early on, using blocks and visual tools.
+  - If interest in math and logic persists, introduce C/C++ around ages 10 or 11.
+  - Focus on building strong foundational skills before introducing advanced tools.
+
+- **Advice for Business Leaders:**
+  - Hire individuals who excel at problem-solving; tool proficiency can be developed.
+  - Use time-boxed problem tasks to assess candidates' modeling skills and pressure handling.
+  - Leverage AI for support, while humans should maintain control over core decisions.
+
+Coach Fegla's full interview is available on YouTube, providing a more in-depth exploration of these topics.
+
+**Discussion Questions:**
+1. How do you think

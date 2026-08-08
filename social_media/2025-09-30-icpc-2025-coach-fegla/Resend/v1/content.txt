@@ -1,0 +1,27 @@
+SUBJECT: Unlocking the Secrets of Elite Problem Solvers
+
+---
+
+Earlier this month, I had the privilege of attending the 2025 ICPC World Finals in Baku. I sat down with Coach Fegla, a legend who has led teams to these prestigious finals over two decades. Our conversation was a deep dive into AI, competitive programming, and the art of teaching people to solve hard problems.
+
+*Agentic AI* is evolving rapidly, and while it might one day snag a gold medal at the ICPC, it’s not there yet. Why? Because competitive programming challenges are a unique breed. They're crafted with precision, demanding quick, innovative thinking under tight constraints—qualities that AI struggles with since it thrives on familiar patterns.
+
+In our chat, Coach Fegla shared valuable insights on learning in an AI-driven world. A hybrid approach is key:
+
+1. Easy problems for honing speed and clean code.
+2. Medium problems to spark creativity and modeling skills.
+3. Hard problems to identify gaps in knowledge and guide future learning.
+
+AI can be a fantastic coach, but it should never replace your own critical thinking.
+
+For parents nurturing future problem solvers, start with logic-based play. If math and logic fascinate your child, consider introducing programming languages like C/C++ around age 10 or 11. Remember, foundations first, tools second.
+
+Business leaders, take note:
+
+- Hire for problem-solving prowess. Tools can be learned quickly, but precise thinking is invaluable.
+- Use time-boxed problem-solving tasks during hiring to uncover modeling skills and resilience under pressure.
+- Pair teams with AI for support but keep core decision-making human-centric.
+
+There's a rich narrative behind these points. Dive deeper into our full interview on YouTube: youtube.com/watch?v=wPCikUh1pyk
+
+Looking forward to your thoughts and feedback!
