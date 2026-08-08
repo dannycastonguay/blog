@@ -1,0 +1,25 @@
+SUBJECT: Can AI Really Boost Economic Growth? Dive into the Debate!
+
+---
+
+Hey there,
+
+We've just dropped an exciting new blog post exploring the potential impact of AI on economic growth, featuring insights from a fascinating conversation between economist Tyler Cowen and Jack Clark, co-founder of Anthropic.
+
+*Key Highlights:*
+
+- Jack Clark suggests AI could boost US economic growth by 3-5% annually, significantly less than the 20-30% some optimists predict. But what assumptions do we need to make to get there?
+
+- Anthropic's recent Economic Index reveals that AI is already a big player in automating software development, with 79% of conversations on their Claude Code platform being classified as automation.
+
+- Programmers, who make up about 3% of the US workforce, could become 50% faster with AI, but this would only add 0.2% to yearly growth. The real potential lies in broader service sector transformation.
+
+*The Big Picture:*
+
+- We break down potential productivity gains across various job sectors, from coders to health practitioners. In a moderate scenario, AI could save 17% of labor hours, adding roughly 2.5% to yearly growth.
+
+- The ceiling for growth could be much higher if industries embrace AI not just to cut costs but to innovate and create new products.
+
+Curious about how these insights could shape the future of work and economic growth? Dive into the full post for a deep dive into this compelling topic!
+
+Happy reading!
