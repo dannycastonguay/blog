@@ -1,0 +1,21 @@
+SUBJECT: Unveiling AI Theory Debt: The Hidden Cost in Your Code
+
+Hey there,
+
+Ever heard of *technical debt*? It's a common term in software development, but what about *AI theory debt*? As AI tools like Lovable and Claude Code make coding feel like magic, there's a hidden cost we often overlook.
+
+Imagine getting 90% of a working feature in minutes. It's thrilling! But do you really understand *why* the code works? Or how small tweaks might lead to a cascade of failures?
+
+That's AI theory debt—when we lose sight of the underlying theory, leaving us to pay later with debugging and blind troubleshooting.
+
+Here's a quick guide to managing this invisible debt:
+
+- Use AI for scaffolding, not full design
+- Always annotate and document key insights
+- Refactor with a full understanding
+- Build your theory through diagrams and experiments
+- Pass on not just code, but the guiding metaphors
+
+Don't just borrow working code; borrow the insight too. For a deeper dive, check out our latest blog post.
+
+Happy coding!
