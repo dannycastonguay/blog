@@ -1,0 +1,36 @@
+Title: Understanding Effective Feedback: The 2x2 Matrix Approach
+
+In the realm of offering feedback, it often falls into a simple 2x2 matrix, which can help in understanding the effectiveness of our input. Here's a breakdown of how this matrix works and how it can be applied across various domains.
+
+**Feedback Matrix Overview:**
+- **Axes:** 
+  - **Agreement vs. Disagreement**
+  - **Effort vs. No Effort**
+
+**Types of Feedback:**
+
+1. **Common but Ineffective Feedback:**
+   - *Agreement + No Effort*
+   - > "This is good. Did you think about adding X?"
+   - This type of feedback is often perceived as helpful but usually isn't. It adds little value since it simply pushes additional work onto the creator.
+
+2. **Effective Feedback:**
+   - *Agreement + Effort*
+   - > "This is good. Here is a sentence you can add."
+   - This feedback is actionable and saves the creator time by providing concrete additions or improvements.
+
+3. **Thoughtful Disagreement:**
+   - *Disagreement + No Effort*
+   - > "I think this part is wrong." or "I see a hole in this argument."
+   - While it doesn't provide a solution, this feedback is valuable as it surfaces issues that might have been overlooked.
+
+4. **Great Feedback:**
+   - *Disagreement + Effort*
+   - You point out flaws and propose better alternatives, such as rewriting a paragraph or fixing logic. This is the most valuable form of feedback as it not only identifies problems but also offers solutions.
+
+**Application:**
+- This framework can be applied to various fields: presentations, writing, code, design, business ideas, and strategy.
+
+**Discussion Questions:**
+1. How do you typically approach giving feedback, and do you think it aligns with this matrix?
+2. Can you share an experience where you received feedback that significantly impacted your work? What
