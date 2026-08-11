@@ -76,4 +76,11 @@ X should remain disposable for as long as possible. Y is the commitment.
 
 The old function promises certainty about X. The new function creates evidence about Y.
 
-So please, stop asking, “How long will it take?” Start asking, “What is the fastest, cheapest thing we can do next to discover what actually solves Y?”
+So please, stop asking, “How long will it take?” Start asking, “What is the fastest, cheapest thing we can do next to discover what actually solves Y?”. 
+
+This is how you keep your agency in a world where AI distorts every timeline:
+
+1. stay focused on the problem, 
+2. don't get attached to your solution
+3. seek evidence to decide what gets built
+
