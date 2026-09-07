@@ -5,6 +5,17 @@ tag: [Cybersecurity, Product]
 toc: true
 ---
 
+This post is from 2019. The lessons still apply today. But I now give you the 2026 super condensed update:
+
+In 2026, I save you time and give you practical advice:
+
+1. Give security its own visible stage in CI/CD so failures are easy to spot.
+2. Automate dependency audits: uv audit for the backend, pnpm audit for the frontend.
+3. Run weekly OWASP ZAP baseline scans on the frontend and ZAP API scans on the backend.
+4. Then assign someone to act on the findings. Automating discovery only helps if you follow through.
+
+---
+
 It is hard to feel sympathy for [black hat hackers](https://en.wikipedia.org/wiki/Black_hat_(computer_security)) who violate computer security with impunity for personal gain or malice. Their action (data breach, manipulation, and destruction) exposes victims to impersonation/fraud, financial damage, loss of privacy, and even life threatening situations. While some grey hat hackers (and whistleblowers) have noble goals (see “[Hacktivism](https://en.wikipedia.org/wiki/Hacktivism)”), the consequences of their illegal actions can take a toll on [their quality of life](https://en.wikipedia.org/wiki/Aaron_Swartz) and their friends and families have to pay the price.
 
 <span><audio id="myAudio" controls>
