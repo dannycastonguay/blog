@@ -1,0 +1,31 @@
+**Title:** How to Write Winning Proposals Using AI: Insights and Tips
+
+In the world of consulting, writing a compelling proposal can make or break a deal. I've found that integrating AI into the proposal-writing process not only streamlines the workflow but also enhances the quality of the output. Here’s a breakdown of my approach to writing proposals using AI tools.
+
+**Key Points on Writing Proposals with AI:**
+
+- **Pre-Meeting Preparation:**
+  - *Investigate and Analyze*: Before any meeting, I explore the potential client's website and product. I spend 15-60 minutes identifying issues and recording feedback using tools like [Descript](https://descript.com/).
+  
+- **Drafting with AI:**
+  - *Leverage AI Tools*: I use AI agents such as ChatGPT 4.5 or bld.ai’s agent to draft initial proposals. This helps in forming a hypothesis on how to assist the client effectively.
+  
+- **Asynchronous Communication:**
+  - *Efficient Early Engagement*: Sharing detailed feedback and draft proposals early in the process results in increased client interest and engagement.
+  
+- **Call Recording and Analysis:**
+  - *Document and Reflect*: During calls, I take notes and record the conversation using transcription tools like Google Gemini or granola.ai. This aids in refining the proposal.
+
+- **Iterative Proposal Development:**
+  - *Refine with Feedback*: Post-call, I feed transcripts into the AI to develop a structured proposal, focusing on problem identification and solution crafting.
+
+**Mindset and Writing Style:**
+
+- **Understanding the Business Model:**
+  - *Think Beyond Tasks*: Effective proposal writing is about challenging existing business models, not just fulfilling requests.
+  
+- **Authentic Communication:**
+  - *Be Honest and Direct*: Authenticity in writing—clear, simple, and direct communication—proves more effective than verbose or ambiguous presentations.
+
+- **Style Over Substance:**
+  - *Clarity and Sim
