@@ -1,0 +1,28 @@
+**Title: Embracing Doubt: How AI is Turning Us All into Scientists**
+
+In today's world, AI technologies are reshaping traditional expert roles, urging us to adopt a more scientific approach to everyday tasks. As AI takes over more functions, our job shifts to questioning and challenging machine outputs.
+
+**Key Points:**
+
+- **AI's Role**: AI provides us with the prevailing views of experts based on vast datasets. However, new knowledge arises from questioning these views, not merely accepting them.
+  
+- **Our New Function**: Our role is to scrutinize AI outputs, asking how they might be wrong. This involves:
+  - Running experiments
+  - Testing boundaries
+  - Considering contradictory cases
+  - Creating and attempting to disprove hypotheses
+
+- **Becoming Scientists**: In this AI-driven era, everyone becomes a scientist by method, not by degree. The scientific method emphasizes doubt over belief.
+  
+- **The Null Hypothesis**: Often misunderstood, the null hypothesis isn't about having no hypothesis. It's about challenging your beliefs rather than defending them. A more fitting term might be the *doubt hypothesis* or *humility hypothesis*.
+  
+- **Real Science**: True science is an act of humility, focusing on evidence over assumptions. This aligns with the principle of Hanlon's Razor: avoid attributing to malice what can be explained by ignorance or error.
+
+> "The scientific method is not about proving what you already think is true, it’s about trying to disprove it."
+
+**Discussion Questions:**
+
+1. How do you incorporate the scientific method in your daily life or work, especially when interacting with AI tools?
+2. Have you ever challenged a strongly held belief after being prompted by AI or new data? What was the outcome? 
+
+Let's explore how we can all adopt a more scientific mindset in our AI-influenced world!
