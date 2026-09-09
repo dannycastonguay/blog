@@ -1,0 +1,30 @@
+### Building a Local AI Workstation: A Hardware Guide for Complete Autonomy
+
+In a world increasingly reliant on cloud services, I embarked on a journey to create a powerful local workstation capable of running large AI models entirely on consumer hardware. Here's a breakdown of the components I chose for full autonomy and privacy, all powered by open-source software.
+
+**Key Components of the Build:**
+
+- **GPU: NVIDIA RTX 5090 (32GB VRAM, ~$3,000)**
+  - Selected for its ability to handle large open-source models like Command R+ and Mixtral without performance compromises.
+
+- **CPU: AMD Ryzen 9 9950X3D (~$700)**
+  - Offers excellent multicore performance and multitasking capabilities, essential for running data loaders and local servers.
+
+- **Motherboard: ROG Strix X870E-E Gaming WiFi (~$450)**
+  - Provides stability, full PCIe 5.0 support, and robust connectivity.
+
+- **Cooling: NZXT Kraken Elite 360 (~$330)**
+  - Keeps CPU temperatures in check during heavy loads, complemented by a Thermaltake Core P3 TG Pro open-frame case (~$180) for optimal airflow.
+
+- **Power Supply: ROG Strix 1000W Platinum ATX 3.1 (~$270)**
+  - Ensures stable and efficient power delivery for all components.
+
+- **Storage: Western Digital Black SN850X NVMe SSD, 8TB Gen4 (~$750)**
+  - Combines massive capacity with high-speed performance for fast model loading and ample dataset storage.
+
+- **RAM: Corsair DDR5 64GB 6000MHz (~$250)**
+  - Provides sufficient memory for handling large datasets and parallel processes.
+
+**Total Cost:** Approximately **$5,930 USD**
+
+After assembling the workstation, I installed Ubuntu and set up Ollama to manage open-source AI models locally. I'm currently running **Command R
