@@ -1,0 +1,7 @@
+**MEDIA PROMPT:**
+
+A professional, realistic illustration of a two-by-two matrix representing the Feedback Matrix from the blog post. The matrix should be divided into four quadrants representing the different types of feedback: Agreement + No Effort, Agreement + Effort, Disagreement + No Effort, and Disagreement + Effort. Each quadrant should visually depict the corresponding feedback type using symbols or miniature scenes that represent the essence of each feedback type. For example, a lightbulb for ideas (Agreement + No Effort), a hand offering help (Agreement + Effort), a person pointing out an error (Disagreement + No Effort), and a person fixing a problem (Disagreement + Effort). 
+
+Include a person standing in front of the matrix, thoughtfully considering each quadrant, indicating the process of understanding and applying this feedback model. Use a color scheme that aligns with an educational, informative design suitable for Reddit community discussions with clean, modern design. 
+
+The image should clearly communicate the main benefit/value proposition from the social media content, which is making the feedback process more effective and actionable, in a way that looks authentic and valuable for social media. This should be an infographic-style layout with emphasis on substance and information. The overall design should be professional but approachable and should respect Reddit culture.
