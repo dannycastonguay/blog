@@ -17,11 +17,3 @@ I've spent almost 10 years trying to create 1M+ jobs through bld.ai. The problem
 Imagine a doctor in New York trying to build something with AI (or SI!). An engineer in Karachi might unlock him with a 30 min conversation and a week of work, saving 2 months of frustration. Existing platforms help, but the problem is still there. That's why I keep trying new approaches, including a bld.ai plugin on chatGPT and Claude.
 
 But I'm not attached to the plugin. I test the idea. I look for where it fails. If I convince myself that it doesn't solve the problem, I kill it. To me, that is success enough. The problem is still worth solving.
-
-Keep using the process we've been practicing. Read carefully. Start with the simplest possible example, by hand, without AI. Change one thing at a time and explore the edge cases. Build a naive algorithm before looking for shortcuts. Test each shortcut against those cases.
-
-You now have a proposal: sort the movies by ending time, then keep choosing the next one you can watch. Implement it and try to break it. Don't pick examples that make it look good. Look for the ones that expose what you missed.
-
-Failing to find a counterexample isn't a proof. Stay precise about what you know, and stay willing to change your mind.
-
-Be excited about solving the problem. Be willing to give up your solution.
