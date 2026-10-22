@@ -39,7 +39,7 @@ Unless they are exceptionally lucky, like Google, which struck gold with its sea
 
 ## 2️⃣ Second-Time Founders: The Product Builders
 
-After struggling with the big idea approach, second-time founders get laser-focused on product and customer experience. They realize that distribution alone is not enough. People actually need to love the product.
+After struggling with the big idea approach, second-time founders get laser-focused on product and customer experience. They realize that the product alone is not enough. People actually need to love the product.
 
 Companies like Airbnb and Amazon fit this mold. Airbnb did not start with a unique tech. They focused on making a product that solved an actual problem. The focus was on crafting a nifty, user-centric product that created real value.
 
