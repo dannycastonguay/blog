@@ -16,8 +16,6 @@ In that sense, Elon Musk is a perfect case study. Whether or not you agree with 
 
 This is the evolution of leadership.
 
-I co-authored with post with my colleague [Nadia Goei](https://www.linkedin.com/in/nadiagoei/), who on top of contributing to the core ideas, also inserted some comments below.
-
 ## The Evolution of the CEO
 
 For centuries, leadership has evolved alongside the dominant skill set of the era.
@@ -39,15 +37,11 @@ First-time founders tend to be obsessed with the idea. They believe success lies
 
 Unless they are exceptionally lucky, like Google, which struck gold with its search algorithm, many first-time founders overestimate the importance of the idea itself and underestimate the importance of execution and distribution.
 
-**Nadia**: "I had countless conversations with early-stage founders who believe they just need the right idea. I used to think the same early in my career. But after working for several tech companies, distribution may matter more than just having a groundbreaking concept."
-
 ## 2️⃣ Second-Time Founders: The Product Builders
 
 After struggling with the big idea approach, second-time founders get laser-focused on product and customer experience. They realize that distribution alone is not enough. People actually need to love the product.
 
 Companies like Airbnb and Amazon fit this mold. Airbnb did not start with a unique tech. They focused on making a product that solved an actual problem. The focus was on crafting a nifty, user-centric product that created real value.
-
-**Nadia**: "I worked six years at Grab and can testify to that. Everything revolved around the customer. The team was relentless about iterating on feedback, refining product features, and ensuring that every touchpoint felt seamless. It was not about just launching a product. It was about crafting an experience that truly stuck.”
 
 And this approach can work. Some second-time founders succeed spectacularly, but it is still a tough road. Many build great products that never reach massive scale because they lack strong distribution.
 
@@ -66,8 +60,6 @@ The best modern founders do not start with product. They start with attention. T
 A classic example is PRIME Hydration. Logan Paul and KSI did not invent a revolutionary new sports drink. They did not obsess over product features for years. They built distribution first, using their massive audience to create demand before they even needed to refine the product.
 
 Another example is Kim Kardashian’s SKIMS. The product is good, but what really makes it a billion-dollar brand is Kim’s distribution power. She had the audience and influence before SKIMS even launched.
-
-**Nadia**: "Seeing founders today, I cannot help but notice a shift. The ones who win are not just great at building. They are great at getting attention. It is not just about the tech anymore. It is about creating momentum, shaping narratives, and being a distribution-first leader. I have seen founders with average products dominate just because they mastered reach first.”
 
 ## Why Distribution Is the Ultimate Startup Advantage
 
